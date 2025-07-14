@@ -298,14 +298,14 @@ def jupyter_UI():
             print("Running the GRACE-HPC calculator...\n")
 
             # Display the job IDs that will be used for this calculation.
-            print("Job IDs:", job_ids_final)
+            # print("Job IDs:", job_ids_final)
 
-            # Display the arguments that will be used.
-            print(f"📅 Start Date: {start_date.value.strftime('%Y-%m-%d')}")
-            print(f"📅 End Date: {end_date.value}")
-            print(f"📍 Region of HPC system: {region.value}")
-            print("Scope 3 Included:", scope3_final)
-            print(f"💾 CSV Output Option: {csv_files.value}")
+            # # Display the arguments that will be used.
+            # print(f"📅 Start Date: {start_date.value.strftime('%Y-%m-%d')}")
+            # print(f"📅 End Date: {end_date.value}")
+            # print(f"📍 Region of HPC system: {region.value}")
+            # print("Scope 3 Included:", scope3_final)
+            # print(f"💾 CSV Output Option: {csv_files.value}")
 
             # Convert the user inputs into an argparse.Namespace object
             arguments = build_args(
