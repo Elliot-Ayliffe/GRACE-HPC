@@ -60,9 +60,9 @@ def gracehpc_run(StartDate=f"{datetime.date.today().year}-01-01", EndDate=dateti
     """
     Run the GRACE-HPC tool programmatically in a script (alternative to CLI).
     
-    This function enables users to run the full engine to estimate the carbon footprint (scope 2 and scope 3) of your SLURM HPC jobs via python scripts or notebooks, 
+    This function enables users to run the full engine to estimate the carbon footprint (scope 2 and scope 3) of your SLURM HPC jobs via python scripts or Jupyter Notebooks, 
     rather than the command line interface (CLI).
-    Results are printed to the console and saved to CSV files if specified.
+    Results are printed to the console and saved to CSV files if specified. 3 dataframes are returned containing the full, daily and total datasets.
     
     
     GRACE-HPC: A Green Resource for Assessing Carbon & Energy in HPC. 
