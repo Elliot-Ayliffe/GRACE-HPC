@@ -45,8 +45,7 @@ import sys
 from .cli import confirm_date_args
 from .core.emissions_calculator import core_engine
 from .script import build_args
-
-
+from interface.jupyter_output import main_jupyter_output
 
 
 def title_instructions_formatter():
@@ -297,16 +296,6 @@ def jupyter_UI():
             # Show message showing the backend is running
             print("Running the GRACE-HPC calculator...\n")
 
-            # Display the job IDs that will be used for this calculation.
-            # print("Job IDs:", job_ids_final)
-
-            # # Display the arguments that will be used.
-            # print(f"📅 Start Date: {start_date.value.strftime('%Y-%m-%d')}")
-            # print(f"📅 End Date: {end_date.value}")
-            # print(f"📍 Region of HPC system: {region.value}")
-            # print("Scope 3 Included:", scope3_final)
-            # print(f"💾 CSV Output Option: {csv_files.value}")
-
             # Convert the user inputs into an argparse.Namespace object
             arguments = build_args(
                 StartDate=start_date.value.strftime('%Y-%m-%d'),
@@ -334,7 +323,7 @@ def jupyter_UI():
             results['total_df'] = total_df
 
             # Pass the dataframes to the jupyter frontend to display results
-            jupyter_output(full_df, daily_df, total_df, arguments)
+            main_jupyter_output(full_df, daily_df, total_df, arguments)
 
     
     run_button.on_click(when_clicked)
