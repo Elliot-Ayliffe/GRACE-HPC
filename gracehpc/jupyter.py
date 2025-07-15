@@ -75,7 +75,7 @@ def title_instructions_formatter():
     the total lifecycle scope 3 emissions for each system divided by the total node-hours available over the system's projected lifetime.</p>
 
     <p><b>Use this interactive tool to quickly assess, visualise and explore the carbon footprint of your HPC jobs.</b></p>
-    <p><b>Note:</b> Estimates are provided for the user's interest only. Please acknowledge the assumptions and limitations below.</p>
+    <p><b>Note:</b> Estimates are provided for the user's interest only. Please acknowledge the assumptions and limitations outlined in the documentation <a href="https://github.com/Elliot-Ayliffe/GRACE-HPC/tree/main" target="_blank">(Link to GitHub Repository).</a></p>
      </div>
     </div>
     """
