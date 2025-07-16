@@ -221,7 +221,8 @@ def scope2_scope3_pie(total_df, arguments):
         title_text="Emissions Breakdown: Scope 2 vs Scope 3",
         title_font_size=16,
         showlegend=True,
-        height=325,
+        height=480,
+        width=480,
         margin=dict(l=30, r=30, t=50, b=30),
     )
 
@@ -472,7 +473,8 @@ def success_failure_pie(total_df):
         title_text="Job Success vs Failure",
         title_font_size=16,
         showlegend=True,
-        height=325,
+        height=400,
+        width=400,
         margin=dict(l=30, r=30, t=50, b=30),
     )
     return fig
@@ -680,14 +682,15 @@ This tool aims to provide both a **transparent overview** and **actionable insig
 
     # Create pie chart showing the energy contributions 
     fig = energy_contribution_pie(total_df)
-    pie_chart_widget = go.FigureWidget(fig)        # Need to convert to FigureWidget to display beside the HTML box
-    energy_box_widget = widgets.HTML(value=energy_box)   # Create HTML widget 
+    # pie_chart_widget = go.FigureWidget(fig)        # Need to convert to FigureWidget to display beside the HTML box
+
 
     # Add space between the two widgets
     space = widgets.Box(layout=widgets.Layout(width='50px'))
 
     # Display side-by-side
-    display(widgets.HBox([energy_box_widget,space, pie_chart_widget]))
+    display(HTML(energy_box))
+    fig.show()
 
     # ------------------------------------------------------
     # CARBON FOOTPRINT BOX: SCOPE 2 AND SCOPE 3 EMISSIONS
@@ -772,18 +775,18 @@ This tool aims to provide both a **transparent overview** and **actionable insig
     scopes_fig = scope2_scope3_pie(total_df, arguments)
 
     if scopes_fig is not None:
-        scopes_pie_widget = go.FigureWidget(scopes_fig)        # Need to convert to FigureWidget to display beside the HTML box
-        emissions_box_widget = widgets.HTML(value=emissions_box)   # Create HTML widget 
+        
+        display(HTML(emissions_box))  
+        scopes_fig.show()
 
-        # Display side-by-side
-        display(widgets.HBox([emissions_box_widget,space, scopes_pie_widget]))
+      
     else:
         # If no scope 3 emissions, just display the emissions box without a pie chart
         display(HTML(emissions_box))
 
     note_html = """
-<p style="font-size: 13px; font-style: italic; color: #444; max-width: 700px; margin-top: -10px;">
-    <b>Note:</b> For Isambard systems, market-based Scope 2 emissions = 0 gCO₂e due to 100% certified zero-carbon electricity contracts. 
+<p style="font-size: 13px; font-style: italic; color: #444; max-width: 700px; margin-top: 10px;">
+    \n<b>Note:</b> For Isambard systems, market-based Scope 2 emissions = 0 gCO₂e due to 100% certified zero-carbon electricity contracts. 
     The estimates above are based on the UK national grid carbon intensity and are provided for informational purposes — 
     representing what the emissions would be if Isambard were not powered by renewable energy (the grid only).
 </p>
@@ -920,7 +923,7 @@ This tool aims to provide both a **transparent overview** and **actionable insig
     """
 
     failed_note_html = """
-    <p style="font-size: 13px; font-style: italic; color: #444; max-width: 700px; margin-top: -10px;">
+    <p style="font-size: 13px; font-style: italic; color: #444; max-width: 700px; margin-top: 10px;">
         <b>Note:</b> Failed HPC jobs are a significant source of wasted computational resources and unnecessary carbon emissions. 
         Every failed job still consumes electricity for scheduling, startup, and partial execution—without producing useful results. 
         Reducing failed jobs is a simple yet impactful way to lower your carbon footprint on HPC systems. 
@@ -928,14 +931,13 @@ This tool aims to provide both a **transparent overview** and **actionable insig
     </p>
     """
 
-    # Failed job pie chart
+     # Failed job pie chart
     failed_jobs_pie = success_failure_pie(total_df)
 
-    failed_jobs_pie_widget = go.FigureWidget(failed_jobs_pie)        # Need to convert to FigureWidget to display beside the HTML box
-    failure_box_widget = widgets.HTML(value=failed_jobs_box)   # Create HTML widget 
+    display(HTML(failed_jobs_box))  
+    failed_jobs_pie.show()
 
-    # Display side-by-side
-    display(widgets.HBox([failure_box_widget,space, failed_jobs_pie_widget]))
+ 
     display(HTML(failed_note_html))
 
     # ------------------------------------------------------
