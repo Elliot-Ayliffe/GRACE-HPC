@@ -206,7 +206,7 @@ def create_input_widgets():
 
     # Custom numeric input for scope 3 emissions (hidden until 'Other HPC system' is selected)
     numeric_scope3 = widgets.Text(
-        placeholder='e.g. 0.34',
+        placeholder='e.g. 34',
         description='gCO₂e/nodeh:',
         layout=widgets.Layout(width='400px'),
         visible=False
