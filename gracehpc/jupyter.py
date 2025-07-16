@@ -45,7 +45,7 @@ import sys
 from .cli import confirm_date_args
 from .core.emissions_calculator import core_engine
 from .script import build_args
-from interface.jupyter_output import main_jupyter_output
+from .interface.jupyter_output import main_jupyter_output
 
 
 def title_instructions_formatter():

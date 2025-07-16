@@ -37,6 +37,7 @@ import datetime
 # Import functions and classes from the package
 from .core.emissions_calculator import core_engine
 from .config import generate_config_file
+from .interface.cli_script_output import main_cli_script_output
 
 
 def confirm_date_args(arguments):
@@ -165,7 +166,7 @@ def main():
 
 
         # Pass the dataframes to the terminal frontend to display results
-        cli_output(full_df, daily_df, total_df, arguments)
+        main_cli_script_output(full_df, daily_df, total_df, arguments)
 
 
 

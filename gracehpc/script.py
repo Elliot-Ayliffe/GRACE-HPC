@@ -25,6 +25,7 @@ import sys
 # Import functions from other modules
 from .cli import confirm_date_args
 from .core.emissions_calculator import core_engine
+from .interface.cli_script_output import main_cli_script_output
 
 
 # Function to convert user inputs into compatible arguments for the core_engine
@@ -134,7 +135,7 @@ def gracehpc_run(StartDate=f"{datetime.date.today().year}-01-01", EndDate=dateti
     full_df, daily_df, total_df = core_engine(arguments)
 
     # Pass the dataframes to the script frontend to display results
-    script_output(full_df, daily_df, total_df, arguments)
+    main_cli_script_output(full_df, daily_df, total_df, arguments)
 
     # return dataframes for use in jupyter notebooks or other scripts 
     return full_df, daily_df, total_df
