@@ -812,7 +812,7 @@ Hence this tool should be used for **informational purposes only**, not as a def
     equivalents_box = f"""
     <div style="background-color: #fff9e6; border: 1px solid #f3d481; border-radius: 0px; 
                 padding: 17px; margin-bottom: 13px; width: fit-content; font-family: sans-serif;">
-        <h2 style="margin-top: 0; color: #a87c00;">📊 THIS IS EQUIVALENT TO:</h2>
+        <h3 style="margin-top: 0; color: #a87c00;">📊 THIS IS EQUIVALENT TO:</h3>
         <ul style="margin: 0 0 0 20px; padding: 0; line-height: 25px; font-size: 13.5px; color: #000;">
             <li><span style="font-weight: bold;">🚗 Driving</span> {driving_miles:,.2f} miles 
                 <span style="color: #555;">(0.21 kgCO2e/mile average UK car, 2023)</span></li>
