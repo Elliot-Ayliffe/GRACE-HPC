@@ -610,10 +610,10 @@ Hence this tool should be used for **informational purposes only**, not as a def
     # Check if energy counters were available
     if "EnergyIPMI_kwh" in total_df.columns:
 
-        if total_df.iloc[0]["EnergyIPMI_kwh"] > 0:
-            energy_counter_status = "✅ Yes — hardware energy counters were available and used in calculations!"
+        if (full_df['EnergyIPMI_kwh'] > 0).all():
+            energy_counter_status = "✅ Yes — hardware energy counters were available for all jobs and used in calculations!"
         else: 
-            energy_counter_status = "❌ Not available — hardware energy counters were not used in calculations. Usage-based estimates were used instead."
+            energy_counter_status = "❌ Not available for all jobs — hardware energy counters were not used in calculations. Usage-based estimates were used instead."
 
     else:
         energy_counter_status = "⚠️ Unknown — energy counter column not found in the data"
@@ -652,15 +652,15 @@ Hence this tool should be used for **informational purposes only**, not as a def
     job_count = row['JobCount']
 
     # Message for counter-based energy 
-    if counter_energy > 0:
+    if (full_df['EnergyIPMI_kwh'] > 0).all():
         counter_energy_msg = f"{counter_energy:,.4f} kWh"
         job_avg_energy = counter_energy / job_count
-        job_avg_msg = "Per-job Average Energy Use (measured):"
+        # job_avg_msg = "Per-job Average Energy Use (measured):"
 
     else:
-        counter_energy_msg =  "N/A (no energy counters available)"
+        counter_energy_msg =  "N/A (not all jobs had energy counters available)"
         job_avg_energy = energy_total / job_count
-        job_avg_msg = "Per-job Average Energy Use (estimated):"
+        # job_avg_msg = "Per-job Average Energy Use (estimated):"
 
 
     # Create the html box 
@@ -678,7 +678,6 @@ Hence this tool should be used for **informational purposes only**, not as a def
             </li>
             <li><b>Compute Energy Use (estimated):</b> {energy_no_pue:,.4f} kWh</li>
             <li><b>Compute Energy Use (measured by system counters):</b> {counter_energy_msg}</li>
-            <li><b>{job_avg_msg}</b> {job_avg_energy:,.4f} kWh</li>
         </ul>
     </div>
     """
@@ -706,7 +705,7 @@ Hence this tool should be used for **informational purposes only**, not as a def
     total_avg_ci = row["CarbonIntensity_gCO2e_kwh"]
 
     # determine whether to display counter-based scope 2 emissions
-    if counter_energy > 0:
+    if (full_df['EnergyIPMI_kwh'] > 0).all():
         scope2_counter_msg = emissions_unit_converter(scope2_counter)
         total_emissions_msg = (
             f"{emissions_unit_converter(total_emissions)} "
@@ -714,7 +713,7 @@ Hence this tool should be used for **informational purposes only**, not as a def
         )
     
     else:
-        scope2_counter_msg = "N/A (no energy counters available)"
+        scope2_counter_msg = "N/A (not all jobs had energy counters available)"
         total_emissions_msg = (
             f"{emissions_unit_converter(total_emissions)} "
             f"(usage-based)"
