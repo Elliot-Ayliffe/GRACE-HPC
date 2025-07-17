@@ -162,7 +162,7 @@ def results_terminal_display(full_df, daily_df, total_df, arguments, hpc_config)
         counter_energy_msg =  "N/A (not all jobs had energy counters available)"
         job_avg_energy = energy_total / job_count
 
-    console.print(Rule("ENERGY CONSUMPTION", style="bold cyan"))
+    console.print(Rule("⚡️ ENERGY CONSUMPTION", style="bold cyan"))
 
     # Print total energy statistics
     console.print(f"""
@@ -310,7 +310,7 @@ def results_terminal_display(full_df, daily_df, total_df, arguments, hpc_config)
     last_job_date = row['LastJobTime']
 
  
-    console.print(Rule("USAGE STATISTICS", style="bold cyan"))
+    console.print(Rule("⚙️ USAGE STATISTICS", style="bold cyan"))
 
     # Print usage statistics
     console.print(f"""
@@ -336,7 +336,7 @@ def results_terminal_display(full_df, daily_df, total_df, arguments, hpc_config)
     wasted_mem_emissions = scope2_usage - scope2_required_memory
 
     # Section header
-    console.print(Rule("FAILED JOBS & WASTED MEMORY IMPACT", style="bold cyan"))
+    console.print(Rule("❌ FAILED JOBS & WASTED MEMORY IMPACT", style="bold cyan"))
 
     # Print failed job stats
     console.print(f"""
