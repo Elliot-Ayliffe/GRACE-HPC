@@ -57,15 +57,15 @@ def title_instructions_formatter():
     <div style="
         background-color: #e8f5e9;
         border-left: 6px solid #4caf50;
-        padding: 30px;
+        padding: 17px;
         border-radius: 8px;
         font-family: 'Segoe UI', sans-serif;
         margin-bottom: 8px;
     ">
-      <h2 style="margin-top: 0; color: #2e7d32; font-size: 2.7em;">GRACE-HPC 🌱 </h2>
-      <p style="font-size: 1.8em;"><strong>Green Resource for Assessing Carbon & Energy in HPC</strong></p>
+      <h2 style="margin-top: 0; color: #2e7d32; font-size: 2.0em;">GRACE-HPC 🌱 </h2>
+      <p style="font-size: 1.5em;"><strong>Green Resource for Assessing Carbon & Energy in HPC</strong></p>
      
-      <div style="font-size: 1.2em;">
+      <div style="font-size: 1.1em;">
       <p>This tool estimates the <b>energy consumption, scope 2 and scope 3 carbon emissions</b> of your SLURM HPC jobs.
     If energy counters are available, it will use them. Otherwise it will estimate energy and emissions from usage data and cluster-specific TDP values.</p>
 
@@ -84,13 +84,13 @@ def title_instructions_formatter():
     <div style="
         background-color: #e3f2fd;
         border-left: 6px solid #1976d2;
-        padding: 30px;
+        padding: 17px;
         border-radius: 8px;
         font-family: 'Segoe UI', sans-serif;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     ">
-    <h2 style="margin-top: 0; color: #1565c0; font-size: 2.1em;">USER GUIDE:</h2>
-    <ul style="font-size: 1.3em; line-height: 1.8;">
+    <h2 style="margin-top: 0; color: #1565c0; font-size: 1.8em;">USER GUIDE:</h2>
+    <ul style="font-size: 1.0em; line-height: 1.6;">
         <li style="margin-bottom: 13px;"><strong>Select the job date range</strong> &mdash; choose the start and end dates for which to process jobs.</li>
         
         <li style="margin-bottom: 13px;"><strong>Enter your HPC Job IDs</strong> &mdash; Choose to include <code>'all_jobs'</code> within the date range or provide a list of job IDs to filter on (<code>'Job IDs'</code>).
@@ -115,7 +115,7 @@ def title_instructions_formatter():
         The default is <code>no_scope3</code>, which means only Scope 2 (operational) emissions will be calculated.
         </li>
         
-        <li style="margin-bottom: 30px;"><strong>Optionally save results to CSV files</strong> &mdash; choose the datasets you wish to export for further analysis or reporting.
+        <li style="margin-bottom: 20px;"><strong>Optionally save results to CSV files</strong> &mdash; choose the datasets you wish to export for further analysis or reporting.
         <ul>
             <li><code>full</code>: all jobs with all columns (1 row per job)</li>
             <li><code>full_summary</code>: all jobs with summary columns only</li>
