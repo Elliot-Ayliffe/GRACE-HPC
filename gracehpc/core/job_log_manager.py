@@ -24,10 +24,14 @@ import os
 import datetime
 from io import BytesIO
 import subprocess
+import warnings
 import argparse
 
 # Import functions/classes from modules 
 from .backend_utils import JobLogUtils
+
+# Suppress pandas SettingWithCopyWarning to avoid cluttering the output
+warnings.filterwarnings("ignore", category=pd.errors.SettingWithCopyWarning)
 
 # This class inherits the utility class to be able to use its methods
 class JobLogProcessor(JobLogUtils):
