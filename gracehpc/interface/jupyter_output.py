@@ -249,7 +249,7 @@ def scatter_full_jobs(full_df):
     df['SubmissionTime'] = pd.to_datetime(df['SubmissionTime'])
 
     # Determine the energy column to use based on energy counters availability
-    counters_available = (df['EnergyIPMI_kwh'] > 0).any()
+    counters_available = (df['EnergyIPMI_kwh'] > 0).all()
     energy_to_use = 'EnergyIPMI_kwh' if counters_available else 'energy_estimated_kwh'
     energy_label = 'Measured Energy (kWh)' if counters_available else 'Estimated Energy (kWh)'
 
@@ -323,7 +323,7 @@ def bar_daily_emissions(daily_df):
     df['SubmissionDate'] = pd.to_datetime(df['SubmissionDate'])
 
     # Determine the energy column to use based on energy counters availability
-    counters_available = (df['EnergyIPMI_kwh'] > 0).any()
+    counters_available = (df['EnergyIPMI_kwh'] > 0).all()
     energy_to_use = 'EnergyIPMI_kwh' if counters_available else 'energy_estimated_kwh'
     energy_label = 'Measured Energy (kWh)' if counters_available else 'Estimated Energy (kWh)'
 
