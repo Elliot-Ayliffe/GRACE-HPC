@@ -620,9 +620,9 @@ Hence this tool should be used for **informational purposes only**, not as a def
 
     # Create the html box 
     overview_box = f"""
-    <div style="border: 1px solid #cccccc; border-radius: 0px; padding: 25px; background-color: #fafafa; font-family: sans-serif; width: fit-content;">
-        <h2 style="margin-top: 0;">🌍 OVERVIEW</h2>
-        <ul style="list-style-type: none; padding-left: 0; font-size: 15px;line-height: 30px;">
+    <div style="border: 1px solid #cccccc; border-radius: 0px; padding: 17px; background-color: #fafafa; font-family: sans-serif; width: fit-content;">
+        <h3 style="margin-top: 0;">🌍 OVERVIEW</h3>
+        <ul style="list-style-type: none; padding-left: 0; font-size: 13.5px;line-height: 25px;">
             <li><strong>HPC System:</strong> {hpc_name}</li>
             <li><strong>User Name:</strong> {user_name}</li>
             <li><strong>Date Range:</strong> {start_date} to {end_date}\n</li>
@@ -665,9 +665,9 @@ Hence this tool should be used for **informational purposes only**, not as a def
 
     # Create the html box 
     energy_box = f"""
-    <div style="background-color: #eaf4fb; border: 1px solid #b3d8f1; border-radius: 0px; padding: 25px; margin-bottom: 15px; width: fit-content; font-family: sans-serif;">
-        <h2 style="margin-top: 0; color: #0a4f75;">⚡ ENERGY CONSUMPTION</h2>
-        <ul style="margin: 0 0 0 20px; padding: 0; line-height: 30px; font-size: 15px;">
+    <div style="background-color: #eaf4fb; border: 1px solid #b3d8f1; border-radius: 0px; padding: 17px; margin-bottom: 13px; width: fit-content; font-family: sans-serif;">
+        <h3 style="margin-top: 0; color: #0a4f75;">⚡ ENERGY CONSUMPTION</h3>
+        <ul style="margin: 0 0 0 20px; padding: 0; line-height: 25px; font-size: 13.5px;">
             <li><b>Total Energy Used (estimated):</b> {energy_total:,.4f} kWh
             <ul style="margin: 5px 0 5px 20px;">
                 <li><b>CPUs:</b> {cpu_energy:,.4f} kWh</li>
@@ -752,9 +752,9 @@ Hence this tool should be used for **informational purposes only**, not as a def
     
     # Create the carbon footprint html box
     emissions_box = f"""
-    <div style="background-color: #e6f4ea; border: 1px solid #b8dcb8; border-radius: 0px; padding: 25px; margin-bottom: 15px; width: fit-content; font-family: sans-serif;">
-        <h2 style="margin-top: 0; color: #317a32;">🌿 CARBON FOOTPRINT</h2>
-        <ul style="margin: 0 0 0 20px; padding: 0; line-height: 30px; font-size: 15px;">
+    <div style="background-color: #e6f4ea; border: 1px solid #b8dcb8; border-radius: 0px; padding: 17px; margin-bottom: 13px; width: fit-content; font-family: sans-serif;">
+        <h3 style="margin-top: 0; color: #317a32;">🌿 CARBON FOOTPRINT</h3>
+        <ul style="margin: 0 0 0 20px; padding: 0; line-height: 25px; font-size: 13.5px;">
             <li><b>Scope 2 Emissions (usage-based):</b> {emissions_unit_converter(scope2_usage)}</li>
             <li><b>Scope 2 Emissions (system counter-based):</b> {scope2_counter_msg}</li>"""
 
@@ -811,9 +811,9 @@ Hence this tool should be used for **informational purposes only**, not as a def
 
     equivalents_box = f"""
     <div style="background-color: #fff9e6; border: 1px solid #f3d481; border-radius: 0px; 
-                padding: 25px; margin-bottom: 15px; width: fit-content; font-family: sans-serif;">
+                padding: 17px; margin-bottom: 13px; width: fit-content; font-family: sans-serif;">
         <h2 style="margin-top: 0; color: #a87c00;">📊 THIS IS EQUIVALENT TO:</h2>
-        <ul style="margin: 0 0 0 20px; padding: 0; line-height: 30px; font-size: 15px; color: #000;">
+        <ul style="margin: 0 0 0 20px; padding: 0; line-height: 25px; font-size: 13.5px; color: #000;">
             <li><span style="font-weight: bold;">🚗 Driving</span> {driving_miles:,.2f} miles 
                 <span style="color: #555;">(0.21 kgCO2e/mile average UK car, 2023)</span></li>
             <li><span style="font-weight: bold;">🌲 Tree absorption:</span> {tree_months_text}
@@ -835,10 +835,10 @@ Hence this tool should be used for **informational purposes only**, not as a def
    
     cost_box = f"""
     <div style="background-color: #fdecec; border: 1px solid #e9a1a1; 
-                border-radius: 0px; padding: 20px; margin-bottom: 15px; 
+                border-radius: 0px; padding: 17px; margin-bottom: 13px; 
                 width: fit-content; font-family: sans-serif;">
         <h3 style="margin-top: 0; color: #b30000;">💰 APPROXIMATE ELECTRICITY COST</h3>
-        <p style="margin: 0; font-size: 15px;">
+        <p style="margin: 0; font-size: 13.5px;">
             <b>Cost:</b> £{total_cost:.2f} 
             <span style="color: #444;">(at {GBP_per_kwh:.4f} GBP/kWh)</span>
         </p>
@@ -865,10 +865,10 @@ Hence this tool should be used for **informational purposes only**, not as a def
 
     # Usage html box
     usage_stats_box = f"""
-    <div style="border: 1px solid #cccccc; border-radius: 0px; padding: 25px; 
+    <div style="border: 1px solid #cccccc; border-radius: 0px; padding: 17px; 
                 background-color: #fafafa; font-family: sans-serif; width: fit-content;">
-        <h2 style="margin-top: 0;">⚙️ USAGE STATISTICS</h2>
-        <ul style="list-style-type: none; padding-left: 0; font-size: 15px; line-height: 30px;">
+        <h3 style="margin-top: 0;">⚙️ USAGE STATISTICS</h3>
+        <ul style="list-style-type: none; padding-left: 0; font-size: 13.5px; line-height: 25px;">
             <li><strong>Number of Jobs:</strong> {job_count:,} <span style="color: #555;">({successful_jobs:,} successful)</span></li>
             <li><strong>First → Last Job Submitted:</strong> {str(first_job_date.date())} → {str(last_job_date.date())}</li>
             <li><strong>Total Runtime:</strong> {total_runtime}</li>
@@ -913,10 +913,10 @@ Hence this tool should be used for **informational purposes only**, not as a def
 
     failed_jobs_box = f"""
     <div style="background-color: #fdecec; border: 1px solid #e9a1a1; 
-                border-radius: 0px; padding: 20px; margin-bottom: 15px; 
+                border-radius: 0px; padding: 17px; margin-bottom: 13px; 
                 width: fit-content; font-family: sans-serif;">
         <h3 style="margin-top: 0; color: #b30000;">❌ FAILED JOBS SUMMARY</h3>
-        <p style="margin: 0; font-size: 15px;">
+        <p style="margin: 0; font-size: 13.5px;">
             <b>Total Jobs:</b> {job_count}<br>
             <b>Failed Jobs:</b> {failed_jobs}<br>
             <b>Wasted Scope 2 Emissions:</b> {emissions_unit_converter(failed_scope2)} <span style="color: #555;">(Usage-based estimate)</span>
@@ -951,10 +951,10 @@ Hence this tool should be used for **informational purposes only**, not as a def
 
     wasted_memory_box = f"""
     <div style="background-color: #edf7ed; border: 1px solid #a6d8a8; 
-                border-radius: 0px; padding: 20px; margin-bottom: 15px; 
+                border-radius: 0px; padding: 17px; margin-bottom: 13px; 
                 width: fit-content; font-family: sans-serif;">
         <h3 style="margin-top: 0; color: #1b5e20;">🧠 WASTED MEMORY IMPACT</h3>
-        <p style="margin: 0; font-size: 15px;">
+        <p style="margin: 0; font-size: 13.5px;">
             Memory overallocation is a common source of energy waste and excess carbon emissions. 
             On most HPC systems, power draw depends on the amount of memory <b>requested</b>, not the memory actually used. 
             If all jobs had been submitted with only the memory they truly required, approximately:<br><br>
@@ -978,7 +978,7 @@ Hence this tool should be used for **informational purposes only**, not as a def
     # DOCUMENTATION AND FEEDBACK TEXT
     # ------------------------------------------------------
     end_text = """
-    <div style="font-family: sans-serif; font-size: 14px; max-width: 700px; margin-top: 20px;">
+    <div style="font-family: sans-serif; font-size: 13.5px; max-width: 700px; margin-top: 20px;">
         <h2 style="margin-bottom: 8px;">Documentation and Feedback</h2>
         <p style="margin: 0; color: #444;">
             Find the methodology including assumptions and limitations of this tool outlined in the 
