@@ -1,7 +1,7 @@
 [project]
 name = "gracehpc"
 version = "0.1.0"
-description = "HPC carbon emissions toolkit"
+description = "HPC energy and carbon emissions toolkit"
 authors = [
     {name = "Elliot Ayliffe",email = "Elliot.ayliffe@gmail.com"}
 ]
