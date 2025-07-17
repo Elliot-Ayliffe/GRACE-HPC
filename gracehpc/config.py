@@ -47,13 +47,13 @@ hpc_system: "<HPC System Name>"         # (str)
 partitions:                         
 
     # Example CPU partition 
-    <Partition1_Name>:               # E.g. For Isambard 3, this would be grace. For Isambard-AI, this would be workq.
+    <Partition1_Name>:               # E.g. For Isambard 3, this would be grace. For Isambard-AI, comment out this partition and use the GPU partition template below.
         processor: <CPU>             # Is the partition CPU or GPU based? E.g. Isambard 3 = CPU, Isambard-AI = GPU, Archer2 = CPU 
         processor_name: "<NVIDIA Grace CPU>"    # (str) The model name of the processor. E.g. "NVIDIA Grace CPU" 
         TDP: <5>                     # (float) The thermal design power (TDP) of the processor per core in Watts. (CPU)
 
     # Example GPU partition 
-    <Partition2_Name>:
+    <Partition2_Name>:               # For Isambard-AI, this would be workq.
         processor: <GPU>             
         processor_name: "<NVIDIA H100 GPU>"     # (str) Name of the GPU model. E.g. "NVIDIA H100 Tensor Core GPU"
         TDP: <500>                          # (integer) The TDP of the whole GPU in watts.
