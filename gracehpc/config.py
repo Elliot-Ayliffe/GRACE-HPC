@@ -36,6 +36,8 @@ def generate_config_file():
 #
 # This file must be edited by the user to include their specific HPC system details before using the GRACE-HPC tool.
 # Please replace all placeholders enclosed in < > with the best estimates for your HPC cluster specifications (e.g. Isambard 3, Isambard-AI etc...)
+# Remove all < > brackets after filling in the values.
+# See the documentation for an example configuration file (hpc_config.yaml) with the correct format.
 
 
 

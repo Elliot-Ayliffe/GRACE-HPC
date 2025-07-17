@@ -579,8 +579,11 @@ This tool aims to provide both a **transparent overview** and **actionable insig
 
 
 **Note**: The results presented here are estimates based on the available data and methodologies with assumptions and limitations.
- Hence this tool should be used for **informational purposes only**, not as a definitive energy and carbon cluster monitoring tool.
-"""
+Hence this tool should be used for **informational purposes only**, not as a definitive energy and carbon cluster monitoring tool.
+
+---
+
+""" + "\n\n"
     display(Markdown(intro_text))
 
     # ------------------------------------------------------
