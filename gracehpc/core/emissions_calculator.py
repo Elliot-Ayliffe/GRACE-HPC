@@ -271,7 +271,7 @@ def add_emissions_data (df_jobs, emissions_calculator, hpc_config):
     cost_per_kwh = hpc_config.get('electricity_cost', 0.2573) # Default = Average Cost of electricity in the UK (0.2573 GBP/kWh) - July 2025 - https://www.ofgem.gov.uk/information-consumers/energy-advice-households/energy-price-cap
 
     # Use energy from counters if available, otherwise use estimated energy from usage data 
-    if (df_jobs['EnergyIPMI_kwh'] > 0).any():
+    if (df_jobs['EnergyIPMI_kwh'] > 0).all():
         # Use plugin-energy for cost calculation if available
         df_jobs['Cost_GBP'] = df_jobs['EnergyIPMI_kwh'] * cost_per_kwh    # cost of electricity in GBP
 
