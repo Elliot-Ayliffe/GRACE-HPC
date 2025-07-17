@@ -25,6 +25,7 @@ dependencies = [
     "jupyter (>=1.1.1,<2.0.0)"
 ]
 
+keywords = ["HPC", "carbon, "emissions", "SLURM", "sustainability", "energy", "GRACE"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
