@@ -118,10 +118,10 @@ def results_terminal_display(full_df, daily_df, total_df, arguments, hpc_config)
      # Check if energy counters were available
     if "EnergyIPMI_kwh" in total_df.columns:
 
-        if total_df.iloc[0]["EnergyIPMI_kwh"] > 0:
-            energy_counter_status = "✅ Yes — hardware energy counters were available and used in calculations!"
+        if (full_df['EnergyIPMI_kwh'] > 0).all():
+            energy_counter_status = "✅ Yes — hardware energy counters were available for all jobs and are used in calculations!"
         else: 
-            energy_counter_status = "❌ Not available — hardware energy counters were not used in calculations. Usage-based estimates were used instead."
+            energy_counter_status = "❌ Not available for all jobs — hardware energy counters were not used in calculations. Usage-based estimates were used instead."
 
     else:
         energy_counter_status = "⚠️ Unknown — energy counter column not found in the data"
@@ -154,12 +154,12 @@ def results_terminal_display(full_df, daily_df, total_df, arguments, hpc_config)
     job_count = row['JobCount']
 
     # Message for counter-based energy 
-    if counter_energy > 0:
+    if (full_df['EnergyIPMI_kwh'] > 0).all():
         counter_energy_msg = f"{counter_energy:,.4f} kWh"
         job_avg_energy = counter_energy / job_count
 
     else:
-        counter_energy_msg =  "N/A (no energy counters available)"
+        counter_energy_msg =  "N/A (not all jobs had energy counters available)"
         job_avg_energy = energy_total / job_count
 
     console.print(Rule("ENERGY CONSUMPTION", style="bold cyan"))
@@ -194,7 +194,7 @@ def results_terminal_display(full_df, daily_df, total_df, arguments, hpc_config)
 
 
     # determine whether to display counter-based scope 2 emissions
-    if counter_energy > 0:
+    if (full_df['EnergyIPMI_kwh'] > 0).all():
         scope2_counter_msg = emissions_unit_converter(scope2_counter)
         total_emissions_msg = (
             f"{emissions_unit_converter(total_emissions)} "
@@ -202,7 +202,7 @@ def results_terminal_display(full_df, daily_df, total_df, arguments, hpc_config)
         )
     
     else:
-        scope2_counter_msg = "N/A (no energy counters available)"
+        scope2_counter_msg = "N/A (not all jobs had energy counters available)"
         total_emissions_msg = (
             f"{emissions_unit_converter(total_emissions)} "
             f"(usage-based)"
