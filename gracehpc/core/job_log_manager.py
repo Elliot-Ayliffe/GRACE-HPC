@@ -139,7 +139,7 @@ class JobLogProcessor(JobLogUtils):
         # Extract the number of allocated GPUs for each job
         # Sometimes AllocTRES may not be available for older versions of SLURM
         if 'AllocTRES' in self.sacct_df.columns:        # If AllocTRES is available extract GPUs from output by searching for gres/gpu
-            self.sacct_df['GPUsAllocated'] = self.sacct_df.AllocTRES.str.extract(r'((?<=gres\/gpu=)\d+)', expand=False).fillna(0).astype('Int64')
+            self.sacct_df['GPUsAllocated'] = self.sacct_df.AllocTRES.str.extract(r'((?<=gres\/gpu=)\d+)', expand=False).fillna(0).astype('int64')
             # Fills 0 if it cannot find gres/gpu 
         else:   # if AllocTRES not available due to old slurm version 
             print("WARNING - 'AllocTRES' sacct command not found due to incompatible SLURM version.")
