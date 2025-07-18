@@ -2,7 +2,7 @@
 
 ## Virtual Environments
 
-Create a virtual environment on your SLURM-based HPC system using either `conda` or `python -m venv`, with Python 3.11 or 3.12.
+Create a virtual environment on your SLURM-based HPC system using either `conda` or `python -m venv`, with **Python 3.11 or 3.12**.
 For Isambard systems follow the [Isambard documentation](https://docs.isambard.ac.uk/user-documentation/guides/python/) for more detailed guidance on setting up environments.
 
 For example, using Conda on the command line, create and activate your virtual environment:
