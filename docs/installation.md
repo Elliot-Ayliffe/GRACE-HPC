@@ -8,7 +8,7 @@ For Isambard systems follow the [Isambard documentation](https://docs.isambard.a
 For example, using Conda on the command line, create and activate your virtual environment:
 
 ```bash
-conda create -n gphc_env python=3.11
+conda create -n ghpc_env python=3.11
 conda activate ghpc_env
 ```
 
@@ -81,6 +81,8 @@ options:
 
  
 
-Carbon intensity for scope 2 emissions (operational) is retrieved from the regional Carbon Intensity API (carbonintensity.org.uk.) at the time of job submission. Scope 3 emissions (embodied) are estimated from the node-hours used by the job, and the scope 3 emissions factor. For Isambard systems and Archer2, these scope 3 factors are calculated from the total lifecycle scope 3 emissions for each system divided by the total node-hours available over the system's projected lifetime.
+Carbon intensity for scope 2 emissions (operational) is retrieved from the regional Carbon Intensity API (carbonintensity.org.uk.) at the time of job submission. 
+Scope 3 emissions (embodied) are estimated from the node-hours used by the job, and the scope 3 emissions factor. 
+For Isambard systems and Archer2, these scope 3 factors are calculated from the total lifecycle scope 3 emissions for each system divided by the total node-hours available over the system's projected lifetime.
 ```
 
