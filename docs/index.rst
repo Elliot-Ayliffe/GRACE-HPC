@@ -3,12 +3,17 @@
     :align: center
 
 
-Welcome to GRACE-HPC's documentation!
-=====================================
+
+Welcome to the documentation for GRACE-HPC!
+===========================================
+
+.. toctree::
+   :caption: Background:
+   :maxdepth: 2
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Usage:
 
    usage
 
