@@ -13,7 +13,7 @@ Welcome to the documentation for GRACE-HPC!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Usage:
+   :caption: User Guide:
 
    usage
 
