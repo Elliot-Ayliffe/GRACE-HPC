@@ -1,5 +1,5 @@
 
-![GRACE-HPC logo](docs/gracehpc_logo.png)
+![GRACE-HPC logo](docs/logo.png)
 
 
 # GRACE-HPC
