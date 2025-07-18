@@ -11,15 +11,27 @@ Welcome to the documentation for GRACE-HPC!
    :caption: Background:
    :maxdepth: 2
 
+   introduction
+   features
+   methodology
+
 .. toctree::
    :maxdepth: 2
    :caption: User Guide:
 
-   usage
-
+   installation
+   configuration
+   inputs_outputs
+   cli
+   function
+   jupyter
+   api
+   
 .. toctree::
    :maxdepth: 2
    :caption: Help:
+
+   faqs
 
 
 
