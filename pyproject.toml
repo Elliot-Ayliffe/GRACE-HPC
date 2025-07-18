@@ -10,10 +10,6 @@ license = "MIT"
 packages = [{ include = "gracehpc" }]
 requires-python = ">=3.11,<3.13"
 
-[project.urls]
-Documentation = "https://grace-hpc.readthedocs.io/en/latest/"
-Source = "https://github.com/Elliot-Ayliffe/GRACE-HPC"
-
 dependencies = [
     "pandas (>=2.3.0,<3.0.0)",
     "ipykernel (>=6.29.5,<7.0.0)",
@@ -32,6 +28,10 @@ dependencies = [
 ]
 
 keywords = ["HPC", "carbon", "emissions", "SLURM", "sustainability", "energy", "GRACE"]
+
+[project.urls]
+Documentation = "https://grace-hpc.readthedocs.io/en/latest/"
+Source = "https://github.com/Elliot-Ayliffe/GRACE-HPC"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
