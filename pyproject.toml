@@ -30,8 +30,8 @@ dependencies = [
 keywords = ["HPC", "carbon", "emissions", "SLURM", "sustainability", "energy", "GRACE"]
 
 [project.urls]
-Documentation = "https://grace-hpc.readthedocs.io/en/latest/"
-Source = "https://github.com/Elliot-Ayliffe/GRACE-HPC"
+"Documentation" = "https://grace-hpc.readthedocs.io/en/latest/"
+"Source" = "https://github.com/Elliot-Ayliffe/GRACE-HPC"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
