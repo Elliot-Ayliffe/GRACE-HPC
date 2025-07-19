@@ -72,7 +72,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 | `CarbonIntensity_gCO2e_kwh`            |  Carbon Intensity at the time of job submission for the selected `Region` (in gCO2e/kWh). <br> Retrieved from the carbon intensity API at the time of job submission. <br> This is averaged over all jobs.|
 | `Scope2Emissions_gCO2e`            |  Scope 2 (operational) emissions calculated using estimated energy (in gCO2e). |
 | `Scope2Emissions_IPMI_gCO2e`            |  Scope 2 (operational) emissions calculated using measured energy (energy counters). |
-| `Scope3Emissions_gCO2e`            |  Scope 3 (embodied emissions) estimated for the job(s). <br> Only shows if the `Scope3` argument is set.  |
+| `Scope3Emissions_gCO2e`            |  Scope 3 (embodied) emissions estimated for the job(s). <br> Only shows if the `Scope3` argument is set.  |
 | `Scope2Emissions_requiredMem_gCO2e`            |  Scope 2 emissions produced if only the required memory had been allocated. |
 | `Scope2Emissions_failed_gCO2e`            |  Scope 2 emissions associated with the failed jobs only. |
 | `TotalEmissions_gCO2e`            |  Total carbon emissions in gCO2e (scope 2 + scope 3). <br> This includes counter-based scope 2 emissions if energy coutners are available, <br> and usage-based estimates if they aren't. |
