@@ -191,9 +191,10 @@ Reducing failed jobs is a simple yet impactful way to lower your carbon footprin
 
 Memory overallocation is a common source of energy waste and excess carbon emissions.
 On most HPC systems, power draw depends on the amount of memory requested, not the memory actually used.
-If all jobs had been submitted with only the memory they truly required, approximately:
 
-598.4678 gCO2e could have been saved (Usage-based estimate)
+    If all jobs had been submitted with only the memory they truly required, approximately:
+
+    598.4678 gCO2e could have been saved (Usage-based estimate)
 
 
 ────────────────────────────────────────── DOCUMENTATION & FEEDBACK ──────────────────────────────────────────
