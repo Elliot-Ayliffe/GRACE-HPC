@@ -11,7 +11,7 @@ Running this command without any options will execute the analysis with **defaul
 
 You can customise the output with many arguments and options to enhance the carbon footprint analysis:
 
-```bash
-usage: gracehpc run [-h] [--StartDate STARTDATE] [--EndDate ENDDATE] [--JobIDs JOBIDS] <br>
+```console
+usage: gracehpc run [-h] [--StartDate STARTDATE] [--EndDate ENDDATE] [--JobIDs JOBIDS]
                     [--Region REGION] [--Scope3 SCOPE3] [--CSV CSV]
 ```
