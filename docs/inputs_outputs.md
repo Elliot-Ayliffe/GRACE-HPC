@@ -18,7 +18,11 @@ Before using the tool, it would be helpful to define all the **input arguments**
 
 ## Output Data 
 
-Below are the columns returned in the outputted datasets once the tool has been run. These are not stored if you are using the command-line interface, unless the user has specified the data to be saved to CSV. The following pages describe how to use the tool and store outputs for each mode: [Command-line Interface](cli.md), [Function Call](function.md), [Interactive Jupyter Interface](jupyter.md)
+Below are the columns returned in the outputted datasets once the tool has been run. These are not stored if you are using the command-line interface, unless the user has specified the data to be saved to CSV. The following pages describe how to use the tool and store outputs for each user mode: 
+
+- [Command-line Interface](cli.md)
+- [Function Call](function.md)
+- [Interactive Jupyter Interface](jupyter.md)
 
 | Column Name           | Description                                                                     |
 |---------------------|---------------------------------------------------------------------------------|
