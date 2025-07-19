@@ -30,7 +30,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 |---------------------|---------------------------------------------------------------------------------|
 | `Job_ID`            |  Unique identifier for your job ran on the HPC system. |
 | `UserID`            |  Unique numerical ID of the job submitter. |
-| `UserName`            |  UserName of the person who submitted the job. |
+| `UserName`            |  Username of the person who submitted the job. |
 | `PartitionName`            |  Name of the partition the job was submitted to.   |
 | `PartitionCategory`            |  Processor type of the partition (`CPU` or `GPU`). <br> This is provided by the user in `hpc_config.yaml`.|
 | `NameofJob`            |  Job name given by the user when submitted. |
@@ -46,7 +46,6 @@ Below are the columns returned in the outputted datasets once the tool has been 
 | `RequestedMemoryGB`            |  Amount of memory requested by the user at job submissions (in GB). |
 | `UsedMemoryGB`            |  Amount of memory actually used by the job(s) (in GB). |
 | `RequiredMemoryGB`            |  The estimated minimum amount of memory required for the job(s) to run (in GB).|
-| `RequestedMemoryGB`            |  Amount of memory requested by the user at job submissions (in GB). |
 | `NodeHours`            |  Calculated total node-hour usage (in hours). |
 | `WorkingDirectory`            |  File system path where the job was run from. <br> e.g. `/lus/lfs1aip1/home/d5c/eayliffe.d5c/job` |
 
@@ -57,15 +56,13 @@ Below are the columns returned in the outputted datasets once the tool has been 
 |---------------------|---------------------------------------------------------------------------------|
 | `EnergyIPMI_kwh`    | Total energy consumed (kWh) by the job(s) measured by hardware energy/power counters <br> (e.g. **IPMI or RAPL**). This is only logged if energy counters are available on the HPC system |
 | `energy_estimated_kwh`            | Total energy consumed (kWh) by the job(s) including the datacenter overhead (PUE factor). <br> This is estimated from usage data and TDP values supplied by the user in `hpc_config.yaml` |
-| `energy_esimtated_noPUE_kwh`            |  Total energy consumed by the job(s) swithout the datacenter overhead (PUE) applied (usage-based estimate) <br> This is for valid comparison with energy counters. |
+| `energy_esimtated_noPUE_kwh`            |  Total energy consumed by the job(s) without the datacenter overhead (PUE) applied (usage-based estimate) <br> This is for valid comparison with energy counters. |
 | `CPU_energy_estimated_kwh`            |  Energy consumed by CPUs (usage-based estimate). |
 | `GPU_energy_estimated_kwh`            |  Energy consumed by GPUs (usage-based estimate). |
 | `memory_energy_estimated_kwh`            |  Energy consumed by memory (usage-based estimate). |
 | `required_memory_energy_estimated_kwh`            |  Energy consumed by memory if only the required memory was allocated (usage-based estimate). |
 | `energy_requiredMem_estimated_kwh`            |  Total energy consumed (kWh) by the job(s) if only the required memory was allocated. |
-| `failed_energy_kwh`            |  Energy consumed by failed jobs only (usage-based estimate) |
-| `CPU_energy_estimated_kwh`            |  Energy consumed by CPUs (usage-based estimate). |
-| `CPU_energy_estimated_kwh`            |  Energy consumed by CPUs (usage-based estimate). |
+| `failed_energy_kwh`            |  Energy consumed by failed jobs only. |
 
 
 #### **Carbon Emissions Data**
@@ -84,7 +81,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 
 #### **Equivalents for User Interest**
 
-These data are provided as approximate values intended to help contextualise the impact of the users carbon footprint.
+These data are provided as approximate values intended to help contextualise the impact of the user's computational carbon footprint.
 See the [Methodology](methodology.md) for sources and assumptions for these calculations.
 
 | Column Name         | Description                                                                     |
