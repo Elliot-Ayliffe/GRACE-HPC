@@ -24,7 +24,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 - [Function Call](function.md)
 - [Interactive Jupyter Interface](jupyter.md)
 
-#### **SLURM-Extracted Job Data columns:**
+#### **SLURM-Extracted Job Data columns**
 
 | Column Name         | Description                                                                     |
 |---------------------|---------------------------------------------------------------------------------|
@@ -51,7 +51,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 | `WorkingDirectory`            |  File system path where the job was run from. <br> e.g. `/lus/lfs1aip1/home/d5c/eayliffe.d5c/job` |
 
 
-#### **Energy Data:**
+#### **Energy Data**
 
 | Column Name         | Description                                                                     |
 |---------------------|---------------------------------------------------------------------------------|
@@ -68,7 +68,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 | `CPU_energy_estimated_kwh`            |  Energy consumed by CPUs (usage-based estimate). |
 
 
-#### **Carbon Emissions Data:**
+#### **Carbon Emissions Data**
 
 | Column Name         | Description                                                                     |
 |---------------------|---------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 
 
 
-#### **Equivalents for User Interest:**
+#### **Equivalents for User Interest**
 
 These data are provided as approximate values intended to help contextualise the impact of the users carbon footprint.
 See the [Methodology](methodology.md) for sources and assumptions for these calculations.
