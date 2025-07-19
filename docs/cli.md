@@ -77,7 +77,6 @@ gracehpc run --JobIDs '119363,119364' --Region 'South Scotland' --Scope3 'Archer
 Here is an example terminal output for `GRACE-HPC` run on Isambard-AI command line.
 
 ```bash
-
 (ghpc_env) username.project@nid01:~/dir> gracehpc run --StartDate 2025-05-01 --EndDate 2025-07-01 --Region 'South West England' --Scope3 'IsambardAI'
 
 
