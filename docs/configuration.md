@@ -18,8 +18,8 @@ Open this file, fill in the values replacing the placeholder entries `<...>`, an
 This file **must remain in the working directory** to enable GRACE-HPC to run correctly.
 
 
-> 💡 We recommend contacting your HPC administrators to obtain accurate TDP values for your cluster
-> Alternatively, many common CPU and GPU TDP values can be found on the [Green Algorithms Online Calculator GitHub](https://github.com/GreenAlgorithms/green-algorithms-tool/tree/master/data/latest) provided by Dr Loïc Lannelongue.
+> 💡 *We recommend contacting your HPC administrators to obtain accurate TDP values for your cluster*.
+> *Alternatively, many common CPU and GPU TDP values can be found on the [Green Algorithms Online Calculator GitHub](https://github.com/GreenAlgorithms/green-algorithms-tool/tree/master/data/latest) provided by Dr Loïc Lannelongue.*
 
 
 ## Example hpc_config.yaml
