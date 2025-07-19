@@ -51,3 +51,26 @@ options:
                             Default: 'no_save'
 ```
 
+## Example Commands 
+
+1. Estimating the energy use and carbon emissions for `all jobs` ran on `Isambard 3` between May and June with `scope 3` emissions included.
+
+```bash
+gracehpc run --StartDate 2025-05-01 --EndDate 2025-06-01 --Region 'South West England' --Scope3 'Isambard3'
+```
+
+2. Estimating energy use and carbon emissions for job `121109` ran on `Isambard-AI` without `scope 3` emissions included, saving the full dataset to CSV for further analysis.
+
+```bash 
+gracehpc run --JobIDs '121109' --Region 'South West England' --CSV 'full'
+```
+
+3. Estimating energy use and carbon emissions for jobs `119363 and 119364` ran on `Archer2` with scope 3 included and saving the total aggregated dataset to CSV, combining both jobs.
+
+```bash
+gracehpc run --JobIDs '119363,119364' --Region 'South Scotland' --Scope3 'Archer2' --CSV 'total'
+```
+
+
+## Example Terminal Output
+
