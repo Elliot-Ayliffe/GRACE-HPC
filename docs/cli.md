@@ -14,3 +14,4 @@ You can customise the output with many arguments and options to enhance the carb
 ```bash
 usage: gracehpc run [-h] [--StartDate STARTDATE] [--EndDate ENDDATE] [--JobIDs JOBIDS] <br>
                     [--Region REGION] [--Scope3 SCOPE3] [--CSV CSV]
+```
