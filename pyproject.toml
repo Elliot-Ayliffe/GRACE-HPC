@@ -1,13 +1,25 @@
 [project]
 name = "gracehpc"
 version = "0.1.0"
-description = "HPC energy and carbon emissions toolkit"
+description = "HPC energy and carbon emissions toolkit - calculate your computational carbon footprint for HPC through CLI, Jupyter, and script-based workflows."
 authors = [
     {name = "Elliot Ayliffe",email = "Elliot.ayliffe@gmail.com"}
 ]
 readme = "README.md"
 license = "MIT"
 packages = [{ include = "gracehpc" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: System :: Monitoring",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Framework :: Jupyter"
+]
 requires-python = ">=3.11,<3.13"
 
 dependencies = [
@@ -30,8 +42,9 @@ dependencies = [
 keywords = ["HPC", "carbon", "emissions", "SLURM", "sustainability", "energy", "GRACE"]
 
 [project.urls]
-"Documentation" = "https://grace-hpc.readthedocs.io/en/latest/"
-"Source" = "https://github.com/Elliot-Ayliffe/GRACE-HPC"
+Documentation = "https://grace-hpc.readthedocs.io/en/latest/"
+Repository = "https://github.com/Elliot-Ayliffe/GRACE-HPC"
+Issues = "https://github.com/Elliot-Ayliffe/GRACE-HPC/issues"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
