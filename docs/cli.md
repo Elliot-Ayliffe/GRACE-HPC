@@ -25,7 +25,8 @@ options:
   --EndDate ENDDATE         The final date of the range to process jobs for, in YYYY-MM-DD. 
                             Default: 2025-07-19
 
-  --JobIDs JOBIDS           Comma-separated list (no spaces) of all the HPC job IDs to filter on (e.g. "id1234,id5678")
+  --JobIDs JOBIDS           Comma-separated list (no spaces) of all the HPC job IDs to filter on. 
+                            E.g. 'id1234,id5678'
                             Default: 'all_jobs'
 
   --Region REGION           UK region of the HPC cluster needed for realtime carbon intensity data. 
@@ -49,3 +50,4 @@ options:
                             'all' : all of the above datasets saved to CSV files. 
                             Default: 'no_save'
 ```
+
