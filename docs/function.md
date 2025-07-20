@@ -50,8 +50,8 @@ For more information on the required arguments run:
 ```python 
 help(gracehpc_run)
 ```
-#### Output
-The output generated is the same as that produced in the terminal for the CLI, [see here for an example](cli.md#example-terminal-output)
+### Output
+The output generated is the same as that produced in the terminal for the CLI, [see here for an example](cli.md#example-terminal-output).
 
 
 ## Function Returns
