@@ -37,13 +37,17 @@ results = jupyter_UI()
 - daily_df
 - total_df
 
-This allows the user to access the raw data as well as the rich notebook display.
+This allows the user to access the raw data as well as the rich notebook display. Note `results` will only contain the DataFrames once the **Calculate Carbon Footprint** button has been clicked.
 
-hi
+*The interface generated:*
 
 ![GRACE-HPC Jupyter Interface](_static/jupyter_interface.png)
 
-hi
+The [input arguments](inputs_outputs.md#input-arguments) behave in the same way as the [CLI](cli.md) and [Python Usage](function.md).
+Users can easily enter different parameters using the widgets and repeatedly run the tool and instantly visualise the corresponding results.
+
+The video below demonstrates the tool in action within **JupyterLab** on Isambard-AI.
+
 
 
 
