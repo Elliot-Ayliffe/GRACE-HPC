@@ -78,6 +78,6 @@ filtered_daily = daily_df[daily_df["SubmissionDate"] == pd.to_datetime("2025-06-
 # Find jobs in full_df with a specific job name
 ai_job = full_df[full_df["NameofJob"] == "AI_benchmark"]
 
-# Select only successful jobs (StateCode == 1)
-successful_jobs = full_df[full_df["StateCode"] == 1]
+# Select only completed jobs (StateCode == 1)
+completed_jobs = full_df[full_df["StateCode"] == 1]
 ```
