@@ -6,6 +6,7 @@ For greater flexibility and integration, you can use GRACE-HPC programmatically,
 
 In your Python code, enter:
 
+```python
 from gracehpc import gracehpc_run 
 ```
 
