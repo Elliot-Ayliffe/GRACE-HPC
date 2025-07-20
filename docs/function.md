@@ -19,26 +19,31 @@ The arguments are identical to those used in the CLI. For detailed descriptions 
 | EndDate             | *str*| YYYY-MM-DD   `"2025-06-15"`                                             |
 | JobIDs              | *str*| Comma separated list (no spaces)   `"id1234,id5678"`                     |
 | Region              | *str*| UK Region Name   `"South West England"`                                  |
-| Scope3              | *str*| HPC system name or a custom value  `"Isambard3"` or `"51"` or `"no_scope3"`                      |
+| Scope3              | *str*| HPC system name or custom value  `"Isambard3"` or `"51"` or `"no_scope3"`                      |
 | CSV                 | *str*| CSV output type   `"full", "total", etc.` or `"no_save"`                               |
 
 
 ## Run the Engine
-Call the following function to run the full engine (and produce outputs) in a Python script or notebook, instead of the command-line interface.
+Call the following function to run the full engine (and return 3 dataframes) in a Python script or notebook, instead of the command-line interface.
 
+```python 
+full_df, daily_df, total_df = gracehpc_run(
+    StartDate="2025-01-01", 
+    EndDate="2026-01-01",
+    Region="South West England",
+    JobIDs="id1234,id5678",
+    Scope3="Isambard3",
+    CSV="no_save"
+)
+```
+## Function Returns
+Output results can be captured in three pandas DataFrames for the further exploration after using the tool. Refer to the [Output Data](inputs_outputs.md#output-data) section for details on the data included and their corresponding column names.
 
-
-
-
-
-
-
-
-
-
-
-
-
+| DataFrame           | Description                                            |
+|---------------------|--------------------------------------------------------|
+| full_df             | Full job-level dataset - **one row per job**. <br> Includes all fields for each job processed in the date range.   |
+| daily_df            |  Daily aggregated dataset - **one row per day**. <br> Aggregates all fields across all jobs per day. <br> E.g. sums the energy and carbon emissions of jobs submitted in each day, and takes the average carbon intensity value.   |
+| total_df            | Total summary dataset - **one row aggregating all jobs**. <br> Includes overall totals or averages for each field in the full_df.   |
 
 
 
