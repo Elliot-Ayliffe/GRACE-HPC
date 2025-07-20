@@ -46,10 +46,13 @@ This allows the user to access the raw data as well as the rich notebook display
 The [input arguments](inputs_outputs.md#input-arguments) behave in the same way as the [CLI](cli.md) and [Python Usage](function.md).
 Users can easily enter different parameters using the widgets and repeatedly run the tool and instantly visualise the corresponding results.
 
+
+## Notebook Demo
+
 The video below demonstrates the tool in action within **JupyterLab** on Isambard-AI.
 
-
 ![Demo](_static/app_navigation.gif)
+![Demo](_static/demo.gif)
 
 
 
