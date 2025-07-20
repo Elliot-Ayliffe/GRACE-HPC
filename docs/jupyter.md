@@ -20,5 +20,25 @@ If you're working on **Isambard 3** or **Isambard-AI**, follow this guide to sta
 Alternatively, you can use the tool in a .ipynb file using VS Code directly on the login node, or follow this guide to start an interactive VS Code session on a compute node: [**VS Code Guide**](https://docs.isambard.ac.uk/user-documentation/guides/vscode/)
 
 
-## Import the Function 
+## Launch the Interface
+
+Once your `.ipynb` notebook is open and connected to the `ghpc_env` environment, your ready to launch the interactive interface:
+
+```python 
+from gracehpc import jupyter_UI
+
+# Generate interface, storing 3 DataFrames in a results dictionary 
+results = jupyter_UI()
+```
+
+`results` is a dictionary containing the 3 dataframes discussed in the [Python Usage](function.md#function-returns): 
+
+- full_df
+- daily_df
+- total_df
+
+This allows the user to access the raw data as well as the rich notebook display.
+
+
+
 
