@@ -42,6 +42,8 @@ This allows the user to access the raw data as well as the rich notebook display
 
 ![GRACE-HPC Jupyter Interface](docs/_static/jupyter_interface.png)
 
+hi
+
 
 
 
