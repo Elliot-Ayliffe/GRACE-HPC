@@ -36,6 +36,22 @@ full_df, daily_df, total_df = gracehpc_run(
     CSV="no_save"
 )
 ```
+
+Example function calls:
+
+```python 
+>>> gracehpc_run(StartDate="2025-06-01", EndDate="2053-07-25", JobIDs="12345,67890", Region="South West England", Scope3="IsambardAI", CSV="all")
+>>> gracehpc_run(StartDate="2025-01-01", EndDate="2025-08-01", Region="South West England", Scope3="Isambard3", CSV="full_summary")
+>>> gracehpc_run(StartDate="2025-07-16", EndDate="2025-07-07", JobIDs="id1245", Region="London", Scope3="51", CSV="no_save")
+```
+
+For more information on the required arguments run:
+
+```python 
+help(gracehpc_run)
+```
+
+
 ## Function Returns
 Output results can be captured in three pandas DataFrames for the further exploration after using the tool. Refer to the [Output Data](inputs_outputs.md#output-data) section for details on the data included and their corresponding column names.
 
