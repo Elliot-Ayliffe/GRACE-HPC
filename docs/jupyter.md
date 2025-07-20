@@ -51,7 +51,7 @@ Users can easily enter different parameters using the widgets and repeatedly run
 
 The video below demonstrates the tool in action within **JupyterLab** on Isambard-AI.
 
-![Demo](_static/app_navigation.gif)
+
 ![Demo](_static/demo_high_res.gif)
 
 
