@@ -4,7 +4,7 @@
 
 - **Which HPC systems is GRACE-HPC compatible with?**
 
-*In theory, GRACE-HPC should work on any HPC system that uses the SLURM workload manager and has access to job accounting data. However, this package has only been tested on Isambard 3 and Isambard-AI so far, therefore, you may encounter some bugs on other systems due to varying SLURM configurations. The tool can be adapted to work for other workload managers by modifying the [job_log_manger.py](https://github.com/Elliot-Ayliffe/GRACE-HPC/blob/main/gracehpc/core/job_log_manager.py) and [backend_utils.py](https://github.com/Elliot-Ayliffe/GRACE-HPC/blob/main/gracehpc/core/backend_utils.py) scripts.*
+*In theory, GRACE-HPC should work on any HPC system that uses the SLURM workload manager and has access to job accounting data. However, this package has only been tested on Isambard 3 and Isambard-AI so far, therefore, you may encounter some bugs on other systems due to varying SLURM configurations. The tool could be adapted to work for other workload managers by modifying the [job_log_manger.py](https://github.com/Elliot-Ayliffe/GRACE-HPC/blob/main/gracehpc/core/job_log_manager.py) and [backend_utils.py](https://github.com/Elliot-Ayliffe/GRACE-HPC/blob/main/gracehpc/core/backend_utils.py) scripts.*
 
 - **Where can I find the TDP values specific to my HPC cluster?**
 
@@ -22,4 +22,4 @@ Additional features to consider if we had more time:
 
 - **Carbon-aware Scheduling tool:** Implementation of a job scheduling recommendation tool that provides advice on when to run jobs during low carbon intensity windows. It could be linked up to the 48 hour forecasts provided by the [NESO carbon intensity API](https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v2-0-0) informing users of the best submission times to minimise their operational carbon emissions.
 
-- **Decarbonisation Strategies:** Provide tailored decarbonisation strategies and adivce so users can make an effort to reduce their computational carbon footprint.
+- **Decarbonisation Strategies:** Provide tailored decarbonisation strategies and advice so users can make an effort to reduce their computational carbon footprint.
