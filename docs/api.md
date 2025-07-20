@@ -11,7 +11,7 @@ The gracehpc package provides the following top-level functions for direct use i
 <strong>Function:</strong> <code>gracehpc_run(StartDate, EndDate, JobIDs, Region, Scope3, CSV)</code><br>
 <strong>Location:</strong> <code>gracehpc.script.gracehpc_run</code><br>
 <strong>Usage:</strong> In Python scripts (.py) or Jupyter Notebooks (.ipynb)<br>
-<strong>Returns:</strong> <code>`full_df`, `daily_df`, `total_df`</code> [pandas DataFames]. Outputs are also displayed in the terminal via rich console.
+<strong>Returns:</strong> <code>full_df, daily_df, total_df</code> [pandas DataFames]. Outputs are also displayed in the terminal via rich console.
 
 </div>
 
