@@ -31,13 +31,16 @@ from gracehpc import jupyter_UI
 results = jupyter_UI()
 ```
 
-`results` is a dictionary containing the 3 dataframes discussed in the [Python Usage](function.md#function-returns): 
+`results` is a dictionary containing the 3 DataFrames discussed in the [Python Usage](function.md#function-returns) section: 
 
 - full_df
 - daily_df
 - total_df
 
 This allows the user to access the raw data as well as the rich notebook display.
+
+
+![GRACE-HPC Jupyter Interface](_static/jupyter_interface.png)
 
 
 
