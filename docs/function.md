@@ -13,14 +13,14 @@ from gracehpc import gracehpc_run
 ## Function Arguments
 The arguments are identical to those used in the CLI. For detailed descriptions and available options, refer to the [Inputs Arguments](inputs_outputs.md#input-arguments) section.
 
-| Argument            | Type | Format (Example)                                                        |
+| Argument            | Type | Format `Example`                                                        |
 |---------------------|------|--------------------------------------------------------------------------|
-| StartDate           | *str*| YYYY-MM-DD   ("2025-01-01")                                              |
-| EndDate             | *str*| YYYY-MM-DD   ("2025-06-15")                                              |
-| JobIDs              | *str*| Comma separated list (no spaces)   ("id1234,id5678")                     |
-| Region              | *str*| UK Region Name   ("South West England")                                  |
-| Scope3              | *str*| HPC system name or a custom value  ("Isambard3") or ("51") or ("no_scope3")                        |
-| CSV                 | *str*| CSV output type   ("full", "total", etc.) or ("no_save")                                |
+| StartDate           | *str*| YYYY-MM-DD   `"2025-01-01"`                                              |
+| EndDate             | *str*| YYYY-MM-DD   `"2025-06-15"`                                             |
+| JobIDs              | *str*| Comma separated list (no spaces)   `"id1234,id5678"`                     |
+| Region              | *str*| UK Region Name   `"South West England"`                                  |
+| Scope3              | *str*| HPC system name or a custom value  `"Isambard3"` or `"51"` or `"no_scope3"`                      |
+| CSV                 | *str*| CSV output type   `"full", "total", etc.` or `"no_save"`                               |
 
 
 ## Run the Engine
