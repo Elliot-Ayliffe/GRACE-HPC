@@ -4,7 +4,7 @@
 
 - **Which HPC systems is GRACE-HPC compatible with?**
 
-*In theory, GRACE-HPC should work on any HPC system that uses the SLURM workload manager and has access to job accounting data. However, this package has only been tested on Isambard 3 and Isambard-AI so far, therefore, you may encounter some bugs on other systems due to varying SLURM configurations.*
+*In theory, GRACE-HPC should work on any HPC system that uses the SLURM workload manager and has access to job accounting data. However, this package has only been tested on Isambard 3 and Isambard-AI so far, therefore, you may encounter some bugs on other systems due to varying SLURM configurations. The tool can be adapted to work for other workload managers by modifying the [job_log_manger.py](https://github.com/Elliot-Ayliffe/GRACE-HPC/blob/main/gracehpc/core/job_log_manager.py) and [backend_utils.py](https://github.com/Elliot-Ayliffe/GRACE-HPC/blob/main/gracehpc/core/backend_utils.py) scripts.*
 
 - **Where can I find the TDP values specific to my HPC cluster?**
 
