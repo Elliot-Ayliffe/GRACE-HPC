@@ -18,10 +18,10 @@
 
 Additional features to consider if we had more time:
 
-- **Advanced Job Filtering:** Allow filtering by the `Account` *sacct* field and working directory in addition to Job IDs. The `Account` field in SLURM corresponds to the project or billing code the job is charged to. It is used as an identifier to track usage across different projects or research groups. 
+- **Advanced Job Filtering:** Allow filtering by the `Account` *sacct* field and working directory in addition to Job IDs. The `Account` field in SLURM corresponds to the project or billing code the job is charged to. It is used as an identifier to track usage across different projects or research groups.<br>
 
 
-- **Carbon-aware Scheduling tool:** Implementation of a job scheduling recommendation tool that provides advice on when to run jobs during low carbon intensity windows. It could be linked up to the 48 hour forecasts provided by the [NESO carbon intensity API](https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v2-0-0) informing users of the best submission times to minimise their operational carbon emissions.
+- **Carbon-aware Scheduling tool:** Implementation of a job scheduling recommendation tool that provides advice on when to run jobs during low carbon intensity windows. It could be linked up to the 48 hour forecasts provided by the [NESO carbon intensity API](https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v2-0-0) informing users of the best submission times to minimise their operational carbon emissions.<br>
 
 
 - **Decarbonisation Strategies:** Provide tailored decarbonisation strategies and advice so users can make an effort to reduce their computational carbon footprint.
