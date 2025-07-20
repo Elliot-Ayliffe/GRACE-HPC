@@ -39,8 +39,9 @@ results = jupyter_UI()
 
 This allows the user to access the raw data as well as the rich notebook display.
 
+hi
 
-![GRACE-HPC Jupyter Interface](docs/_static/jupyter_interface.png)
+![GRACE-HPC Jupyter Interface](_static/jupyter_interface.png)
 
 hi
 
