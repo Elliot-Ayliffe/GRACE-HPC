@@ -22,7 +22,7 @@ This raw accounting data is then parsed and processed into usable formats to ena
 
 ## Energy Consumption
 
--  **System Energy Counters**
+#### **System Energy Counters**
 
 `gracehpc` has been programmed to use system energy counters if they are available on your specific HPC cluster. These energy use values are returned in the `ConsumedEnergyRaw` sacct field.
 
@@ -30,7 +30,7 @@ This raw accounting data is then parsed and processed into usable formats to ena
 
 See the [**acct_gather.conf**](https://slurm.schedmd.com/acct_gather.conf.html) documentation for more details on the type of plugins available and how they are configured.
 
-- **Usage-based Energy Estimates**
+#### **Usage-based Energy Estimates**
 
 As energy counters are not always available on HPC systems, `gracehpc` also implements an approximate energy consumption calculation that incorporates resource usage data and known hardware power draw (TDP values).
 
@@ -44,7 +44,7 @@ $$
 E_{\text{total}} = E_{\text{compute}} \cdot \text{PUE}
 $$
 
-**Where:**
+Where:
 
 - $E_{\text{compute}}$ = Total compute energy use 
 - $T_{\text{CPU}}$ = CPU usage time 
@@ -53,7 +53,7 @@ $$
 - $P_{\text{GPU}}$ = GPU power draw (TDP)
 - $T_{\text{elapsed}}$ = Total elapsed runtime 
 - $P_{\text{mem}}$ = Memory power draw (based on power per GB)
-- $E_{\text{total}}$ = Total Energy consumed including the data center overhead
+- $E_{\text{total}}$ = Total energy consumed including the data center overhead
 - $\text{PUE}$ = Power Usage Effectiveness of the data centre
 
 
