@@ -33,7 +33,56 @@ Here we define some important terms that are used throughout the documentation a
 <details>
 <summary><strong>sacct</strong></summary>
 <br>
-<em>A SLURM command used to extract job accounting data for those that have been completed. Provides data such as runtime, resource usage, job status, etc. See the [SLURM Documentation](https://slurm.schedmd.com/sacct.html) for a more detailed description and list of fields available. GRACE-HPC uses sacct to extract the necessary data for energy and emissions estimates.</em>
+<em>A SLURM command used to extract job accounting data for those that have been completed. Provides data such as runtime, resource usage, job status, etc. See the <a href="https://slurm.schedmd.com/sacct.html" target="_blank">SLURM Documentation</a> for a more detailed description and list of fields available. GRACE-HPC uses sacct to extract the necessary data for energy and emissions estimates.</em>
+</details>
+<br>
+
+<details>
+<summary><strong>Scope 2 Emissions</strong></summary>
+<br>
+<em>Indirect greenhouse gas emissions from the consumption of purchased energy such as electricity and heat. For HPC systems, this is the emissions produced from the electricity used to power the service. Also known as Operational Emissions.</em>
+</details>
+<br>
+
+<details>
+<summary><strong>Scope 3 Emissions</strong></summary>
+<br>
+<em>Indirect greenhouse gas emissions from other lifecycle stages (not the operational stage). For HPC systems, this can include hardware/infrastructure manufacturing, transportation, installation and disposal. Also known as Embodied Emissions.</em>
+</details>
+<br>
+
+<details>
+<summary><strong>Carbon Intensity</strong></summary>
+<br>
+<em>A measure of the amount of carbon emissions (CO2e) produced per unit of electricity generated (typically in gCO2e/kWh). In simple terms, its a measure of how clean or dirty our electricity is. It varies by region, time and energy mix, highly dependent on the contribution from renewable energy sources (e.g wind, solar) vs non-renewable energy sources (e.g. gas, oil)</em>
+</details>
+<br>
+
+<details>
+<summary><strong>kWh (Kilowatt-hour)</strong></summary>
+<br>
+<em>A unit of energy measuring how much energy you are using per hour. Equivalent to 1 kilowatt (1000 watts) of power used continuously for 1 hour. Commonly used for electrical energy consumption.</em>
+</details>
+<br>
+
+<details>
+<summary><strong>CO₂e</strong></summary>
+<br>
+<em>Carbon dioxide equivalent is a standard unit for measuring greenhouse gases (the global warming potential of a mixture of greenhouse gases such as CO₂, CH₄, N₂O, etc.). It indicates the amount of CO₂ that would produce an equivalent impact on global warming as the specified mixture.</em>
+</details>
+<br>
+
+<details>
+<summary><strong>TDP (Thermal Design Power)</strong></summary>
+<br>
+<em>The maximum amount of heat a component (e.g. CPU or GPU) is expected to generate under typical workloads. Commonly used as a proxy for power draw.</em>
+</details>
+<br>
+
+<details>
+<summary><strong>PUE (Power Usage Effectiveness)</strong></summary>
+<br>
+<em>The metric that describes energy efficiency of data centre or HPC facility, used to estimate data centre overhead. It is calculated as the ratio of total energy consumed by the data centre to the energy consumed by the IT equipment (servers, storage, networking) within the facility. Value over 1. </em>
 </details>
 <br>
 
