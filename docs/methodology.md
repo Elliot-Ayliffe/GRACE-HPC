@@ -22,7 +22,7 @@ This raw accounting data is then parsed and processed into usable formats to ena
 
 ## Energy Consumption
 
-#### **System Energy Counters**
+#### System Energy Counters
 
 `gracehpc` has been programmed to use system energy counters if they are available on your specific HPC cluster. These energy use values are returned in the `ConsumedEnergyRaw` sacct field.
 
@@ -30,7 +30,7 @@ This raw accounting data is then parsed and processed into usable formats to ena
 
 See the [**acct_gather.conf**](https://slurm.schedmd.com/acct_gather.conf.html) documentation for more details on the type of plugins available and how they are configured.
 
-#### **Usage-based Energy Estimates**
+#### Usage-based Energy Estimates
 
 As energy counters are not always available on HPC systems, `gracehpc` also implements an approximate energy consumption calculation that incorporates resource usage data and known hardware power draw (TDP values).
 
@@ -82,19 +82,27 @@ If a region is not specified, the [2024 UK average carbon intensity](https://www
 
 
 
-
-
-
-
-
-
-
-
-
 ## Scope 3 Emissions
 
+Scope 3 emissions can be calculated for 3 HPC systems: **Isambard 3**, **Isambard-AI**, and [**Archer 2**](https://docs.archer2.ac.uk/user-guide/energy/). These have undergone lifecycle assessments estimating a per node-hour scope 3 emissions factor. These factors are calculated from the total lifecycle scope 3 emissions for each system divided by the total node-hours available over the system's projected lifetime. GRACE-HPC estimates the embodied emissions for each job based on node usage and job duration.
 
+Per node-hour scope 3 emissions:
 
+- **Isambard 3:** `43 gCO₂e / node-hour`
+- **Isambard-AI:** `114 gCO₂e / node-hour`
+- [**Archer 2:**](https://docs.archer2.ac.uk/user-guide/energy/) `23 gCO₂e / node-hour`
+
+Formula:
+
+$$
+\text{S3} = \text{NH} \cdot \text{EF}
+$$
+
+Where:
+
+- $\text{S3}$ = Embodied carbon emissions for the job(s) in *gCO2e*
+- $\text{NH}$ = Node-Hours consumed by the job(s)
+- $\text{EF}$ = Scope 3 emissions factor in *gCO₂e/node-hour*
 
 
 
