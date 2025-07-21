@@ -129,7 +129,27 @@ Equivalent number of miles driven in an average UK petrol/diesel car.
 
 Number of months it would take a single mature tree to absorb the CO₂ emitted.
 
-**Value used:**
+**Value used:** 833 gCO₂e/month - based on 10 kgCO₂e per year
+**Source:** [One Tree Planted](https://onetreeplanted.org/blogs/stories/how-much-co2-does-tree-absorb?srsltid=AfmBOopRTUnD98_burqqG8JqB93xk9VGxHDDes7QyZj0p-OMyvQSgJsG)
+
+
+#### Household Daily Electricity Use
+
+Equivalent to the daily electricity emissions of this number of average UK households.
+
+**Values used:** 7.397 kWh/day & UK average carbon intensity in 2024 (124 gCO₂e/kWh)
+**Source:** [Ofgem - 2700kWh/year average](https://www.ofgem.gov.uk/average-gas-and-electricity-usage)
+
+#### Bristol-Paris Flights
+
+Equivalent number of one-way passenger flights from Bristol to Paris.
+
+**Value used:** 141700 gCO₂e/flight (per passenger)
+**Source:** [Curb6](https://curb6.com/footprint/flights/bristol-brs/paris-cdg)
+
+
+
+
 
 
 
