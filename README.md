@@ -13,7 +13,7 @@ The package is designed to work on any HPC system that uses SLURM as workload ma
 
 ## Documentation 
 
-For a complete guide to the methodology, installation, and usage of GRACE-HPC, please visit the <a href="https://grace-hpc.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><strong>Official Documentation here</strong></a>.
+For a complete guide to the methodology, installation, and usage of GRACE-HPC, please visit the [**Official Documentation here**](https://grace-hpc.readthedocs.io/en/latest/).
 
 # How to use it?
 
