@@ -7,12 +7,8 @@
 Welcome to the documentation for GRACE-HPC!
 ===========================================
 
-**G**reen **R**esource for **A**ssessing **C**arbon & **E**nergy in **HPC**
----------------------------------------------------------------------------
-
-.. raw:: html
-
-    <h2><span style="font-weight:bold;">G</span>reen <span style="font-weight:bold;">R</span>esource for <span style="font-weight:bold;">A</span>ssessing <span style="font-weight:bold;">C</span>arbon & <span style="font-weight:bold;">E</span>nergy in <span style="font-weight:bold;">H</span>PC</h2>
+Green Resource for Assessing Carbon & Energy in HPC
+---------------------------------------------------
 
 GRACE-HPC is a Python toolkit for estimating the energy consumption and carbon emissions of SLURM-based HPC jobs. 
 Calculate your computational carbon footprint through a CLI, Python functions, and an interactive Jupyter Notebook interface.
