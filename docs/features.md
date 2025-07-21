@@ -26,18 +26,26 @@ A simple, widget-based interface can be launched from a Jupyter Notebook (.ipynb
 ## Features 
 
 - **Flexible Job Selection:** Specify a date range to process jobs for, individual Job IDs, or both.
+<br>
 
 - **Job Log Extraction:** Extracts and processes job details (such as runtime, resource allocation, and usage) using SLURM's sacct command.
+<br>
 
 - **Energy Consumption:** Calculates energy consumption using both usage data and system energy counters (if available).
+<br>
 
 - **Scope 2 Emissions:** Estimates scope 2 (operational) emissions produced by the jobs using **real-time, region-specific carbon intensity data** from the [National Grid ESO Carbon Intensity API](https://carbonintensity.org.uk)
+<br>
 
 - **Scope 3 Emissions:** Includes Scope 3 (embodied) emissions estimates for a few HPC systems that have undergone a lifecycle assessment and calculated a per node-hour scope 3 emissions factor (Isambard 3, Isambard-AI, Archer 2).
+<br>
 
 - **Contextual Equivalents:** Results include CO₂e equivalents such as the driving, tree-months and flying to help users interpret and understand the scale of the environmental impact.
+<br>
 
 - **Rich Output Options:** View results in the terminal, export to CSV, load as DataFrames, or display interactively in notebooks with instant plots.
+<br>
 
+The overall goal of this tool is not to serve as a definitive energy and carbon cluster monitoring tool, but rather to provide accessible estimates that inform and raise awareness about the environmental impact of HPC-workloads - promoting more sustainable, carbon-aware practices.
 
 
