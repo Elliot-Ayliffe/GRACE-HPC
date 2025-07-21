@@ -107,6 +107,29 @@ Where:
 You can input a custom per node-hour scope 3 factor for other HPC systems if the appropriate analyses have been done and the data is available.
 
 
+## Contextual Equivalents
+
+To help users better understand and contextualise the impact of their HPC carbon footprint, GRACE-HPC provides several real-world equivalents. These translate raw carbon emissions values into more relatable terms and are intended solely for **informational purposes**.
+
+#### Formula
+
+$$
+\text{Equivalent unit} = \frac{\text{Total Emissions (gCO₂)}}{\text{Emissions Factor (CO₂/unit)}}
+$$
+
+#### Driving
+
+Equivalent number of miles driven in an average UK petrol/diesel car.
+
+**Value used:** 211.2 gCO₂e/mile 
+**Source:** [UK average car CO₂ emissions (2023) - NimbleFins](https://www.nimblefins.co.uk/average-co2-emissions-car-uk#nogo)
+
+
+#### Tree-Months
+
+Number of months it would take a single mature tree to absorb the CO₂ emitted.
+
+**Value used:**
 
 
 
