@@ -2,7 +2,7 @@
 
 GRACE-HPC also supports a fully interactive, user friendly **Jupyter Notebook** interface, allowing you to enter the arguments through intuitive widgets and instantly visualise the results. Interactive figures are created using `plotly` providing in-depth insights into the energy and carbon emissions of the users HPC jobs - all within a single `.ipynb` file.
 
-> 💡 *You must have generated, edited, and saved the `hpc_config.yaml` [configuration file](coniguration.md) before completing the steps below.*
+> 💡 *You must have generated, edited, and saved the `hpc_config.yaml` [configuration file](configuration.md) before completing the steps below.*
 
 ## Setting Up the .ipynb Notebook
 
