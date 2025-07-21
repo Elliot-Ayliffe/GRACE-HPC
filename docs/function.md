@@ -2,6 +2,8 @@
 
 For greater flexibility and integration, you can use GRACE-HPC programmatically, directly in a **Python script** (.py) or **Jupyter Notebook** (.ipynb) by importing and calling a function. This enables you to embed the tool into your own workflows, automate analyses, or even develop your own custom carbon footprinting solutions.
 
+> 💡 *You must have generated, edited, and saved the `hpc_config.yaml` [configuration file](coniguration.md) before completing the steps below.*
+
 ## Import the Function
 
 In your Python code, enter:

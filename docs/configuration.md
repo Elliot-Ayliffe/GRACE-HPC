@@ -24,7 +24,7 @@ This file **must remain in the working directory** to enable GRACE-HPC to run co
 
 ## Example hpc_config.yaml
 
-Here is an example configuration file editted for **Isambard-AI**
+Here is an example configuration file edited for **Isambard-AI**
 
 ```yaml
 # ----------------------------------------------------------------------------------------------------------------
