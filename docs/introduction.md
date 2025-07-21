@@ -20,32 +20,20 @@ Here we define some important terms that are used throughout the documentation a
 <summary><strong>HPC (High-Performance Computing)</strong></summary>
 <br>
 <em>The use of powerful computing resources (clusters, supercomputers) to perform large-scale computations beyond the capabilities of standard desktop computers.</em>
-
-
 </details>
-
+<br>
 
 <details>
 <summary><strong>SLURM</strong></summary>
 <br>
-<em>A widely used job scheduler/ workload manager for HPC systems that allocates compute resources for user-submitted jobs. GRACE-HPC is only compatible with SLURM-based HPC systems at the moment. See the [FAQs](faqs.md) for more information.</em>
-
-
+<em>A widely used job scheduler/ workload manager for HPC systems that allocates compute resources for user-submitted jobs. GRACE-HPC is only compatible with SLURM-based HPC systems at the moment. See the <a href="faqs.html">FAQs</a> for more information.</em>
 </details>
+<br>
 
 <details>
 <summary><strong>sacct</strong></summary>
 <br>
 <em>A SLURM command used to extract job accounting data for those that have been completed. Provides data such as runtime, resource usage, job status, etc. See the [SLURM Documentation](https://slurm.schedmd.com/sacct.html) for a more detailed description and list of fields available. GRACE-HPC uses sacct to extract the necessary data for energy and emissions estimates.</em>
-
-
 </details>
+<br>
 
-
-
-
-```{dropdown} Click to expand
-This is hidden text that will appear when the dropdown is expanded.
-
-You can put **Markdown**, code, lists, etc. in here.
-```
