@@ -16,7 +16,7 @@ The tool can be used directly from the command line of your HPC system with simp
 
 2. [**Python Function Call**](function.md)
 
-The same core engine can be called via a function in a Python Script (.py) or a Jupyter Notebook (.ipynb). This mode is ideal for workflow integration and automation, allowing the tool to be embedded into larger Python applications. It also returns the raw datasets produced by the tool for further exploration and user-lead analysis afterwards. If you want flexibility, this is the mode for you.
+The same core engine can be called via a function in a Python Script (.py) or a Jupyter Notebook (.ipynb). This mode is ideal for workflow integration and automation, allowing the tool to be embedded into larger Python applications. It also returns the raw datasets produced by the tool for further exploration and user-led analysis afterwards. If you want flexibility, this is the mode for you.
 
 3. [**Interactive Jupyter Interface**](jupyter.md)
 
@@ -26,4 +26,18 @@ A simple, widget-based interface can be launched from a Jupyter Notebook (.ipynb
 ## Features 
 
 - **Flexible Job Selection:** Specify a date range to process jobs for, individual Job IDs, or both.
+
+- **Job Log Extraction:** Extracts and processes job details (such as runtime, resource allocation, and usage) using SLURM's sacct command.
+
+- **Energy Consumption:** Calculates energy consumption using both usage data and system energy counters (if available).
+
+- **Scope 2 Emissions:** Estimates scope 2 (operational) emissions produced by the jobs using **real-time, region-specific carbon intensity data** from the [National Grid ESO Carbon Intensity API](https://carbonintensity.org.uk)
+
+- **Scope 3 Emissions:** Includes Scope 3 (embodied) emissions estimates for a few HPC systems that have undergone a lifecycle assessment and calculated a per node-hour scope 3 emissions factor (Isambard 3, Isambard-AI, Archer 2).
+
+- **Contextual Equivalents:** Results include CO₂e equivalents such as the driving, tree-months and flying to help users interpret and understand the scale of the environmental impact.
+
+- **Rich Output Options:** View results in the terminal, export to CSV, load as DataFrames, or display interactively in notebooks with instant plots.
+
+
 
