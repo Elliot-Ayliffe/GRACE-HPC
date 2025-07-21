@@ -111,7 +111,7 @@ You can input a custom per node-hour scope 3 factor for other HPC systems if the
 
 To help users better understand and contextualise the impact of their HPC carbon footprint, GRACE-HPC provides several real-world equivalents. These translate raw carbon emissions values into more relatable terms and are intended solely for **informational purposes**.
 
-#### Formula
+Formula:
 
 $$
 \text{Equivalent unit} = \frac{\text{Total Emissions (gCO₂)}}{\text{Emissions Factor (CO₂/unit)}}
