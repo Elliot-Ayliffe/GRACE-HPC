@@ -146,17 +146,21 @@ Equivalent number of one-way passenger flights from Bristol to Paris.
 
 ## Assumptions & Limitations
 
+Below is a list of assumptions and limitations to keep in mind when using this tool. These may slightly affect the accuracy of the given estimates.
+
 | **Area**                 | **Assumption / Limitation** |
 |--------------------------|-----------------------------|
-| CPU Usage                | If SLURM fails to log actual CPU usage time, the tool assumes all allocated cores <br> were 100% utilized for the entire job duration. |
-| GPU Usage                | Assumes 100% GPU utilization due to the absence of GPU usage data in the SLURM logs. <br> This may result in slight overestimation of GPU energy consumption. |
-| Hardware Coverage        | Does not account for energy consumption from other hardware components such as storage and interconnect switches. <br> For example, these are estimated to account for up to 8% of operational emissions for Isambard-AI and 18% for Isambard 3. |
+| CPU Usage                | If SLURM fails to log actual CPU usage time, the tool assumes all allocated cores <br> were 100% utilised for the entire job duration. |
+| GPU Usage                | Assumes 100% GPU utilisation due to the absence of GPU usage data in the SLURM logs. <br> This may result in slight overestimation of GPU energy consumption. |
+| Hardware Coverage        | Does not account for energy consumption from other hardware components <br> such as storage and interconnect switches. For example, these are estimated to account for <br> up to 8% of operational emissions for Isambard-AI and 18% for Isambard 3. |
 | Constant PUE | Assumes a constant PUE value, though real-world PUE can vary seasonally over time.  |
 | Memory Energy            | Assumes a constant power draw per GB of requested memory. |
 | Job Filtering            | The tool does not currently filter by the SLURM field `Account` or by working directory. |
-| Scope 3 Emissions        | Based on lifecycle assessments that rely on high-level estimates/assumptions and include only major hardware components. <br> They also do not take into account minor stages such as installment and disposal. |
+| Scope 3 Emissions        | Based on lifecycle assessments that rely on high-level estimates/assumptions <br> and include only major hardware components. They also do not take into account minor stages <br> such as installment and disposal. |
 
 
+
+## Acknowledgements 
 
 
 
