@@ -54,21 +54,30 @@ Where:
 - $T_{\text{elapsed}}$ = Total elapsed runtime 
 - $P_{\text{mem}}$ = Memory power draw (based on power per GB)
 - $E_{\text{total}}$ = Total energy consumed including the data center overhead
-- $\text{PUE}$ = Power Usage Effectiveness of the data centre
-
-
-
-
-
-
-
+- $\text{PUE}$ = Power Usage Effectiveness of the data centre - quantifies the extra energy needed to operate the data center (e.g. lighting, cooling)
 
 
 
 
 ## Scope 2 Emissions 
 
+Scope 2 emissions are calculated using the energy consumed and the carbon intensity of producing this energy at a specified region.
 
+$$
+\text{S2} = E_{\text{total}} \cdot \text{CI}
+$$
+
+Where:
+
+- $\text{S2}$ = Operational carbon emissions in *gCO2e*
+- $E_{\text{total}}$ = Total energy consumed in *kWh*
+- $\text{CI}$ = Carbon intensity of electricity consumed in *gCO2e/kWh*
+
+#### Carbon Intensity Source
+
+If the user specifies a region corresponding to their HPC system's location,  real-time national grid carbon intensity values are retrieved via the [NESO Carbon Intensity API](https://carbonintensity.org.uk). These values, matched to each job's submission time, enable more accurate and region-specific Scope 2 estimates - assuming the HPC system draws power from the national grid.
+
+If a region is not specified, the [2024 UK average carbon intensity](https://www.carbonbrief.org/analysis-uks-electricity-was-cleanest-ever-in-2024/)is used: `124 gCO₂/kWh`
 
 
 
