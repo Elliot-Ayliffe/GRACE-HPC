@@ -37,8 +37,13 @@ As energy counters are not always available on HPC systems, `gracehpc` also impl
 
 
 
-E_total = (T_CPU × P_CPU) + (T_GPU × P_GPU) + (T_elapsed × M_req × P_mem)
-E_final = E_total × PUE
+$$
+E_{\text{total}} = (T_{\text{CPU}} \cdot P_{\text{CPU}}) + (T_{\text{GPU}} \cdot P_{\text{GPU}}) + (T_{\text{elapsed}} \cdot M_{\text{req}} \cdot P_{\text{mem}})
+$$
+
+$$
+E_{\text{final}} = E_{\text{total}} \cdot \text{PUE}
+$$
 
 
 
