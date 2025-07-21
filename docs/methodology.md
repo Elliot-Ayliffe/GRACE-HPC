@@ -104,7 +104,7 @@ Where:
 - $\text{NH}$ = Node-Hours consumed by the job(s)
 - $\text{EF}$ = Scope 3 emissions factor in *gCO₂e/node-hour*
 
-
+You can input a custom per node-hour scope 3 factor for other HPC systems if the appropriate analyses have been done and the data is available.
 
 
 
