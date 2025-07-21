@@ -34,7 +34,7 @@ A simple, widget-based interface can be launched from a Jupyter Notebook (.ipynb
 - **Energy Consumption:** Calculates energy consumption using both usage data and system energy counters (if available).
 <br><br>
 
-- **Scope 2 Emissions:** Estimates scope 2 (operational) emissions produced by the jobs using **real-time, region-specific carbon intensity data** from the [National Grid ESO Carbon Intensity API](https://carbonintensity.org.uk)
+- **Scope 2 Emissions:** Estimates scope 2 (operational) emissions produced by the jobs using **real-time, region-specific carbon intensity data** from the [National Grid ESO Carbon Intensity API](https://carbonintensity.org.uk).
 <br><br>
 
 - **Scope 3 Emissions:** Includes Scope 3 (embodied) emissions estimates for a few HPC systems that have undergone a lifecycle assessment and calculated a per node-hour scope 3 emissions factor (Isambard 3, Isambard-AI, Archer 2).
