@@ -162,7 +162,7 @@ Below is a list of assumptions and limitations to keep in mind when using this t
 
 ## Acknowledgements 
 
-The methodology for estimating usage-based energy consumption and operational emissions was inspired by the **Green Algorithms** initiative, particularly their online calculator and their server-side tool, GA4HPC.
+The methodology for estimating usage-based energy consumption and operational emissions was inspired by the **Green Algorithms** initiative, particularly their online calculator and their server-side tool, [GA4HPC](https://github.com/GreenAlgorithms/GreenAlgorithms4HPC).
 
 - Publication: [Green Algorithms: Quantifying the Carbon Footprint of Computation](https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202100707) - Lannelongue et al. 2021
 
