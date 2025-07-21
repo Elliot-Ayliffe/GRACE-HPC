@@ -34,16 +34,27 @@ See the [**acct_gather.conf**](https://slurm.schedmd.com/acct_gather.conf.html) 
 
 As energy counters are not always available on HPC systems, `gracehpc` also implements an approximate energy consumption calculation that incorporates resource usage data and known hardware power draw (TDP values).
 
-
-Energy = Power \times Time → $E = P \times t$
-
-$$
-E_{\text{total}} = (T_{\text{CPU}} \cdot P_{\text{CPU}}) + (T_{\text{GPU}} \cdot P_{\text{GPU}}) + (T_{\text{elapsed}} \cdot M_{\text{req}} \cdot P_{\text{mem}})
-$$
+Formula:
 
 $$
-E_{\text{final}} = E_{\text{total}} \cdot \text{PUE}
+E_{\text{compute}} = (T_{\text{CPU}} \cdot P_{\text{CPU}}) + (T_{\text{GPU}} \cdot P_{\text{GPU}}) + (T_{\text{elapsed}} \cdot P_{\text{mem}})
 $$
+
+$$
+E_{\text{total}} = E_{\text{compute}} \cdot \text{PUE}
+$$
+
+**Where:**
+
+- $E_{\text{compute}}$ = Total compute energy use 
+- $T_{\text{CPU}}$ = CPU usage time 
+- $P_{\text{CPU}}$ = CPU power draw (TDP)
+- $T_{\text{GPU}}$ = GPU usage time
+- $P_{\text{GPU}}$ = GPU power draw (TDP)
+- $T_{\text{elapsed}}$ = Total elapsed runtime 
+- $P_{\text{mem}}$ = Memory power draw (based on power per GB)
+- $E_{\text{total}}$ = Total Energy consumed including the data center overhead
+- $\text{PUE}$ = Power Usage Effectiveness of the data centre
 
 
 
