@@ -15,7 +15,7 @@ Although awareness of computing's environmental impact is increasing, efforts to
 ## Terminology
 
 <details>
-<summary>What HPC systems does GRACE-HPC support?</summary>
+<summary>**What HPC systems does GRACE-HPC support?**</summary>
 
 GRACE-HPC currently supports the Isambard 3 and Isambard-AI clusters. Support for other SLURM-based systems can be added by configuring the tool with the appropriate energy and system information.
 
