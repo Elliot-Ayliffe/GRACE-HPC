@@ -9,8 +9,6 @@
 
 `gracehpc` is a lightweight Python package designed to enable users and operators of SLURM-based HPC systems to estimate and analyse the carbon footprint of their computational workloads. It calculates and displays **energy consumption, Scope 2 (operational)** and **Scope 3 (embodied)** carbon emissions for your jobs ran on the system, using SLURM accounting logs and user-specified parameters.
 
-The package is designed to work on any HPC system that uses SLURM as workload manager, however, it has only been tested on Isambard-AI and Isambard 3 at these early stages.
-
 ## Documentation 
 
 For a complete guide to the methodology, installation, and usage of GRACE-HPC, please visit the [**Official Documentation here**](https://grace-hpc.readthedocs.io/en/latest/).
