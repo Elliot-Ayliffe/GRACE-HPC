@@ -21,3 +21,10 @@ GRACE-HPC currently supports the Isambard 3 and Isambard-AI clusters. Support fo
 
 </details>
 hi
+
+
+
+```{dropdown} Click to expand
+This is hidden text that will appear when the dropdown is expanded.
+
+You can put **Markdown**, code, lists, etc. in here.
