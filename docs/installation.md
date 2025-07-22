@@ -14,7 +14,7 @@ conda activate ghpc_env
 
 ## From PyPI
 
-The package can be installed from the `PyPI` repository ([here](https://pypi.org)) with `pip` by running the following command in the terminal:
+The package can be installed from the [PyPI repository](https://pypi.org/project/gracehpc/) with `pip` by running the following command in the terminal:
 
 ```bash
 pip install gracehpc
