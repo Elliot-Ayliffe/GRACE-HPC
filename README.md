@@ -2,7 +2,6 @@
 ![GRACE-HPC logo](docs/logo.png)
 
 [![Docs Status](https://img.shields.io/readthedocs/grace-hpc/latest?label=Documentation)](https://grace-hpc.readthedocs.io/en/latest/?badge=latest)
-
 [![PyPI - Version](https://img.shields.io/pypi/v/gracehpc?label=PyPI&color=blue)](https://pypi.org/project/gracehpc/)
 
 # GRACE-HPC
