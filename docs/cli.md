@@ -1,6 +1,6 @@
 # Command-line Interface (CLI)
 
-Now that the configuration file has been editted and saved, you can run `GRACE-HPC` from the command-line to calculate the energy use and carbon footprint of your HPC jobs:
+Now that the configuration file has been edited and saved, you can run `GRACE-HPC` from the command-line to calculate the energy use and carbon footprint of your HPC jobs:
 
 ```bash
 gracehpc run [ARGUMENT-OPTIONS]
