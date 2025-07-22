@@ -41,7 +41,7 @@ jupyter lab --no-browser --ip="${LISTEN_IP}" --port="${LISTEN_PORT}"
 ```
 
 
-Alternatively, you can use the tool in a .ipynb file using VS Code directly on the login node, or follow this guide to start an interactive VS Code session on a compute node: [**VS Code Guide**](https://docs.isambard.ac.uk/user-documentation/guides/vscode/)
+Alternatively, you can use the tool in a .ipynb file using VS Code directly on the **login node**, or follow this guide to start an interactive VS Code session on a compute node: [**VS Code Guide**](https://docs.isambard.ac.uk/user-documentation/guides/vscode/)
 
 
 ## Launch the Interface
