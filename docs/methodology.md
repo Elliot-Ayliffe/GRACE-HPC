@@ -77,7 +77,7 @@ Where:
 
 If the user specifies a region corresponding to their HPC system's location,  real-time national grid carbon intensity values are retrieved via the [NESO Carbon Intensity API](https://carbonintensity.org.uk). These values, matched to each job's submission time, enable more accurate and region-specific Scope 2 estimates - assuming the HPC system draws power from the national grid.
 
-If a region is not specified, the [2024 UK average carbon intensity](https://www.carbonbrief.org/analysis-uks-electricity-was-cleanest-ever-in-2024/)is used: `124 gCO₂/kWh`
+If a region is not specified, the [2024 UK average carbon intensity](https://www.carbonbrief.org/analysis-uks-electricity-was-cleanest-ever-in-2024/) is used: `124 gCO₂/kWh`
 
 
 
