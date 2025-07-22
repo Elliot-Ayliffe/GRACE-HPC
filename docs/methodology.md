@@ -156,7 +156,7 @@ Below is a list of assumptions and limitations to keep in mind when using this t
 | Constant PUE | Assumes a constant PUE value, though real-world PUE can vary seasonally over time.  |
 | Memory Energy            | Assumes a constant power draw per GB of requested memory. |
 | Job Filtering            | The tool does not currently filter by the SLURM field `Account` or by working directory. |
-| Scope 3 Emissions        | Based on lifecycle assessments that rely on high-level estimates/assumptions <br> and include only major hardware components. They also do not take into account minor stages <br> such as installment and disposal. |
+| Scope 3 Emissions        | Based on lifecycle assessments that rely on high-level estimates/assumptions <br> and include only major hardware components. They also do not take into account minor stages <br> such as transportation, installment, and disposal. |
 
 
 
