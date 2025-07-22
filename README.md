@@ -48,7 +48,7 @@ A simple, widget-based interface can be launched from a Jupyter Notebook (.ipynb
 - **Scope 3 Emissions:** Includes Scope 3 (embodied) emissions estimates for a few HPC systems that have undergone a lifecycle assessment and calculated a per node-hour scope 3 emissions factor (Isambard 3, Isambard-AI, Archer 2).
 <br>
 
-- **Contextual Equivalents:** Results include CO₂e equivalents such as the driving, tree-months and flying to help users interpret and understand the scale of the environmental impact.
+- **Contextual Equivalents:** Results include CO₂e equivalents such as driving, tree-months and flying to help users interpret and understand the scale of the environmental impact.
 <br>
 
 - **Rich Output Options:** View results in the terminal, export to CSV, load as DataFrames, or display interactively in notebooks with instant plots.
