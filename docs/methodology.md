@@ -114,7 +114,7 @@ To help users better understand and contextualise the impact of their HPC carbon
 Formula:
 
 $$
-\text{Equivalent unit} = \frac{\text{Total Emissions (gCO₂)}}{\text{Emissions Factor (CO₂/unit)}}
+\text{Equivalent unit} = \frac{\text{Total Emissions (gCO₂)}}{\text{Emissions Factor (gCO₂/unit)}}
 $$
 
 #### Driving
