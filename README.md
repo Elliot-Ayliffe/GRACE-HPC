@@ -2,6 +2,7 @@
 ![GRACE-HPC logo](docs/logo.png)
 
 [![Documentation Status](https://readthedocs.org/projects/grace-hpc/badge/?version=latest)](https://grace-hpc.readthedocs.io/en/latest/?badge=latest)
+[![GRACE Docs](https://img.shields.io/readthedocs/grace-hpc/latest?label=Documentation)](https://grace-hpc.readthedocs.io/en/latest/?badge=latest)
 
 # GRACE-HPC
 
