@@ -2,12 +2,12 @@
 
 This file shows an example of the `GRACE-HPC` interactive Jupyter Notebook interface being ran on Isambard-AI
 
-![Jupyter UI](example_uses/images/interface.png)
+![Jupyter UI](images/interface.png)
 
-![Energy Consumption](example_uses/images/energy.png)
+![Energy Consumption](images/energy.png)
 
-![Carbon Emissions](example_uses/images/emissions.png)
+![Carbon Emissions](images/emissions.png)
 
-![Interactive Plots](example_uses/images/plots.png)
+![Interactive Plots](images/plots.png)
 
-![Failed Jobs](example_uses/images/failed_jobs.png)
+![Failed Jobs](images/failed_jobs.png)
