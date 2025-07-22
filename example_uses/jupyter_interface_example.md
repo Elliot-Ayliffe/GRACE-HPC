@@ -1,4 +1,9 @@
+# Jupyter Notebook Interface - Example 
 
+This file shows an example of the `GRACE-HPC` interactive Jupyter Notebook interface being ran on Isambard-AI
 
-
-[View Jupyter Interface (via nbviewer)](https://nbviewer.org/github/Elliot-Ayliffe/GRACE-HPC/blob/main/example_uses/jupyter_interface_example.html)
+![Jupyter UI](example_uses/images/interface.png)
+![Energy Consumption](example_uses/images/energy.png)
+![Carbon Emissions](example_uses/images/emissions.png)
+![Interactive Plots](example_uses/images/plots.png)
+![Failed Jobs](example_uses/images/failed_jobs.png)
