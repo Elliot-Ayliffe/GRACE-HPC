@@ -53,7 +53,7 @@ options:
 
 ## Example Commands 
 
-1. Estimating the energy use and carbon emissions for `all jobs` ran on `Isambard 3` between May and June with `scope 3` emissions included.
+1. Estimating the energy use and carbon emissions for `all jobs` ran by the user on `Isambard 3` between May and June with `scope 3` emissions included.
 
 ```bash
 gracehpc run --StartDate 2025-05-01 --EndDate 2025-06-01 --Region 'South West England' --Scope3 'Isambard3'
