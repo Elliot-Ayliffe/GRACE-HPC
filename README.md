@@ -14,7 +14,7 @@
 
 ## Documentation 
 
-For a complete guide to the methodology, installation, and usage of GRACE-HPC, please visit the [**Official Documentation here**](https://grace-hpc.readthedocs.io/en/latest/).
+For a complete guide to the methodology, **installation**, and usage of GRACE-HPC, please visit the [**Official Documentation here**](https://grace-hpc.readthedocs.io/en/latest/).
 
 # How to use it?
 
