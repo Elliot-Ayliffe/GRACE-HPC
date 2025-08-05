@@ -35,7 +35,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 | `PartitionCategory`            |  Processor type of the partition (`CPU` or `GPU`). <br> This is provided by the user in `hpc_config.yaml`.|
 | `NameofJob`            |  Job name given by the user when submitted. |
 | `SubmissionTime`            |  Date and time the job was submitted in  `%Y-%m-%d %H:%M:%S` format (Datetime).
-| `SateCode`            |  Numeric code representing the job status (1 = completed/successful, 0 = failed).|
+| `StateCode`            |  Numeric code representing the job status (1 = completed/successful, 0 = failed).|
 | `TotalNodes`            |  Total number of nodes allocated to the job(s).|
 | `CPUsAllocated`            |  Total number of CPU cores allocated to the job(s). |
 | `GPUsAllocated`            |  Total number of GPUs allocated to the job(s). |
@@ -56,7 +56,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 |---------------------|---------------------------------------------------------------------------------|
 | `EnergyIPMI_kwh`    | Total energy consumed (kWh) by the job(s) measured by hardware energy/power counters <br> (e.g. **IPMI or RAPL**). This is only logged if energy counters are available on the HPC system |
 | `energy_estimated_kwh`            | Total energy consumed (kWh) by the job(s) including the datacenter overhead (PUE factor). <br> This is estimated from usage data and TDP values supplied by the user in `hpc_config.yaml` |
-| `energy_esimtated_noPUE_kwh`            |  Total energy consumed by the job(s) without the datacenter overhead (PUE) applied (usage-based estimate) <br> This is for valid comparison with energy counters. |
+| `energy_estimated_noPUE_kwh`            |  Total energy consumed by the job(s) without the datacenter overhead (PUE) applied (usage-based estimate) <br> This is for valid comparison with energy counters. |
 | `CPU_energy_estimated_kwh`            |  Energy consumed by CPUs (usage-based estimate). |
 | `GPU_energy_estimated_kwh`            |  Energy consumed by GPUs (usage-based estimate). |
 | `memory_energy_estimated_kwh`            |  Energy consumed by memory (usage-based estimate). |
@@ -75,7 +75,7 @@ Below are the columns returned in the outputted datasets once the tool has been 
 | `Scope3Emissions_gCO2e`            |  Scope 3 (embodied) emissions estimated for the job(s). <br> Only shows if the `Scope3` argument is set.  |
 | `Scope2Emissions_requiredMem_gCO2e`            |  Scope 2 emissions produced if only the required memory had been allocated. |
 | `Scope2Emissions_failed_gCO2e`            |  Scope 2 emissions associated with the failed jobs only. |
-| `TotalEmissions_gCO2e`            |  Total carbon emissions in gCO2e (scope 2 + scope 3). <br> This includes counter-based scope 2 emissions if energy coutners are available, <br> and usage-based estimates if they aren't. |
+| `TotalEmissions_gCO2e`            |  Total carbon emissions in gCO2e (scope 2 + scope 3). <br> This includes counter-based scope 2 emissions if energy counters are available, <br> and usage-based estimates if they aren't. |
 
 
 
